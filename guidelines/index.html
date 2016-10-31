@@ -1,701 +1,330 @@
 <!doctype html>
 <html lang="en">
 
-  <head>  	
-  	<meta charset="utf-8">
-    <meta name="description" content="Responsive Bootstrap Landing Page Template">
-    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-		<title>Pluto - Material UI Inspired Bootstrap Template</title>
+    <head>
+        <meta charset="utf-8">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" media="screen">
-    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
-    <link href="css/material.min.css" rel="stylesheet">
-    <link href="css/ripples.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-  </head>
+        <link rel="shortcut icon" href="https://www.intra.goias.gov.br/pas-acesso-app/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://www.intra.goias.gov.br/pas-acesso-app/img/favicon.ico" type="image/x-icon">
 
-  <body>
+        <meta name="description" content="Responsive Bootstrap Landing Page Template">
+        <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="DiogoVanderlei, Grayrids">
 
-    <div class="navbar navbar-invers menu-wrap">
-      <div class="navbar-header text-center">
-        <a class="navbar-brand logo-right" href="javascript:void(0)"><i class="mdi-image-timelapse"></i>Pluto</a>
-      </div>
-        <ul class="nav navbar-nav main-navigation">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#why">why</a></li>
-          <li><a href="#screenshot">Screenshots</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#clients">Contact</a></li>
-        </ul>
-        <button class="close-button" id="close-button">Close Menu</button>
-    </div>
-  	
-  	<div class="content-wrap">
-     <header class="hero-area" id="home">
-      
-      <div class="container">
-          <div class="col-md-12">
+        <title>Goiás :: Segplan :: SCTI :: Supart :: Web Development - Guidelines </title>
 
-            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
-              <div class="container">
-                <div class="navbar-header">
-                  <a class="logo-left " href="index.html"><i class="mdi-image-timelapse"></i>Pluto</a>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" media="screen">
+        <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+        <link href="css/material.min.css" rel="stylesheet">
+        <link href="css/ripples.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+
+        <!--<link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css">-->
+
+        <link href="css/segplan-guidelines.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-invers menu-wrap" style="    overflow-x: auto; overflow-y: auto;" >
+
+            <div class="navbar-header text-center">
+                <a class="navbar-brand logo-right" href="javascript:void(0)"><!--<i class="mdi-image-timelapse"></i>UI Goiás--> <img src="img/features/governo-estado-inovador-pas.png"></a>
+            </div>
+            <ul class="nav navbar-nav main-navigation">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#why">Princípios</a></li>
+                <li><a href="#interface-de-usuario">Interface de Usuário</a></li>
+                    <li class="subnivel"><a href="#estrutura">Estrutura</a></li>
+                    <li class="subnivel"><a href="#topo">Topo</a></li>
+                    <li class="subnivel"><a href="#barra-de-ferramentas">Barra de Ferramentas</a></li>
+                    <li class="subnivel"><a href="#menu-laterais">Menus Laterais</a></li>
+                    <li class="subnivel"><a href="#container-principal">Container Principal</a></li>
+
+                <li><a href="#why">Padrões</a>
+
+                    <li class="subnivel"><a href="#controles">Controles</a></li>
+                    <li class="subnivel"><a href="#listatem">Listagens</a></li>
+                    <li class="subnivel"><a href="#formularios">Formulários</a></li>
+                    <li class="subnivel"><a href="#relatorios">Relatórios</a></li>
+                    <li class="subnivel"><a href="#confirmacao">Confirmações</a></li>
+                    <li class="subnivel"><a href="#formato-dados">Formato de Dados</a></li>
+                    <li class="subnivel"><a href="#validacoes-campos">Validações de Campos</a></li>
+                    <li class="subnivel"><a href="#validacoes-regras">Validações de Regras</a></li>
+                    <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
+                    <li class="subnivel"><a href="#pesquisas">Pesquisas</a></li>
+                    <li class="subnivel"><a href="#recarregar">Recarregar</a></li>
+
+
+                <li><a href="#estilos">Estilos</a></li>
+                <li><a href="#componentes">Componentes</a></li>
+                    <li class="subnivel"><a href="#botoes-navegacao">Botões de Navegação</a></li>
+                    <li class="subnivel"><a href="#botoes-estilizados">Botões Estilizados</a></li>
+                    <li class="subnivel"><a href="#botoes-flutuantes">Botões Flutuantes</a></li>
+                    <li class="subnivel"><a href="#botoes">Botões</a></li>
+                    <li class="subnivel"><a href="#datatables">Datatables</a></li>
+                    <li class="subnivel"><a href="#input-tags">InputTags</a></li>
+                    <li class="subnivel"><a href="#modais">Modais</a></li>
+                    <li class="subnivel"><a href="#dialogos">Diálogos</a></li>
+                    <li class="subnivel"><a href="#divisores">Divisores</a></li>
+                    <li class="subnivel"><a href="#listas">Listas</a></li>
+                    <li class="subnivel"><a href="#listas-controles">Controle de Listas</a></li>
+                    <li class="subnivel"><a href="#listas-controles">Pickers</a></li>
+                    <li class="subnivel"><a href="#progressos-atividades">Progresso e Atividade</a></li>
+                    <li class="subnivel"><a href="#sliders">Sliders</a></li>
+                    <li class="subnivel"><a href="#steppers">Steppers</a></li>
+                    <li class="subnivel"><a href="#subheaders">Sub Headers</a></li>
+                    <li class="subnivel"><a href="#tabs">Tabs</a></li>
+                    <li class="subnivel"><a href="#text-fields">Text Fields</a></li>
+                    <li class="subnivel"><a href="#toolbars">Toolbars</a></li>
+                    <li class="subnivel"><a href="#widgets">Widgets</a></li>
+
+                <li><a href="#usabilidade">Usabilidade</a></li>
+                    <li class="subnivel"><a href="#fontes">Ajuste de Fontes</a></li>
+                    <li class="subnivel"><a href="#contraste">Ajuste de Contraste</a></li>
+                    <li class="subnivel"><a href="#relevo">Ajuste de Relevo</a></li>
+                    <li class="subnivel"><a href="#cores">Ajuste de Cores</a></li>
+
+                <li><a href="#recursos">Recursos</a></li>
+                    <li class="subnivel"><a href="#paleta-cores">Paleta de Cores</a></li>
+                    <li class="subnivel"><a href="#fontes">Fontes</a></li>
+                    <li class="subnivel"><a href="#icones">Ícones</a></li>
+                    <li class="subnivel"><a href="#imagens">Imagens</a></li>
+               </ul>
+            <button class="close-button" id="close-button">Close Menu</button>
+        </div >
+
+        <div class="content-wrap">
+            <header class="hero-area" id="home">
+
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix"
+                             data-offset-top="200">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <a class="logo-left " href="index.html"><!--<i class="mdi-image-timelapse"></i>-->Goiás - Guidelines</a>
+                                </div>
+                                <div class="navbar-right">
+                                    <button class="menu-icon" id="open-button">
+                                        <i class="mdi-navigation-menu"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents text-right">
+                        <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">UI Goiás Guideline</h1>
+                        <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Diretrizes de design de interface de usuário para sistemas e apps do Estado de Goiás.</p>
+                    </div>
+            </header>
+
+            <section id="why" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/features/ipad-mockup-portal-final.png" data-lightbox="example-set" data-title="Portal Ipad">
+                                <img src="img/features/ipad-mockup-portal-final.png" alt="" style="border: 5px solid #fff; width:58%;">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="pull-left content">
+                                <h2>Princípios</h2>
+                                <p></p>
+                                <ul class="list-item">
+                                    <li><i class="mdi-action-done"></i>Responsividade</li>
+                                    <li><i class="mdi-action-done"></i>Acessibilidade</li>
+                                    <li><i class="mdi-action-done"></i>Padrões</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar-right">
-                  <button class="menu-icon"  id="open-button">
-                    <i class="mdi-navigation-menu"></i>
-                  </button>             
+            </section>
+
+            <section id="interface-de-usuario" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Interface de Usuário</h3>
+                                <p>Detalhe</p>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/interface/dashboard.png" data-title="Portal Intra Goiás Dashboard">
+                                <img src="img/interface/dashboard.png" class="img-responsive" alt="">
+                             </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-        </div>        
-        <div class="contents text-right">
-          <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Pluto - Material UI Inspired Bootstrap Template</h1>
-          <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Material Design Inspired HTML5 Bootstrap Template for Business and App</p>
-          <a href="#why" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a>
-          <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Learn More</a>
-        </div>   
-    </header>
+            </section>
 
-    <section id="features" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">App Features</h1>
-          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Who seeks after it and wants to have it</h2>
-        </div>
-        <div class="row">
-
-          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="features">
-              <div class="icon">
-                <i class="mdi-action-settings"></i>
-              </div>
-              <div class="features-text">
-                <h4>Built-with Bootstrap 3.5.x</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-             </div>
-          </div>
-
-
-          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
-            <div class="features">
-              <div class="icon">
-                <i class="mdi-action-done-all"></i>
-              </div>
-              <div class="features-text">
-                <h4>Material Design</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
-            <div class="features">
-              <div class="icon">
-                <i class="mdi-image-blur-linear"></i>
-              </div>
-              <div class="features-text">
-                <h4>Clean and Refreshing</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-            </div>
-          </div>            
-
-
-          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="650ms">
-            <div class="features">
-              <div class="icon">
-                <i class="mdi-communication-business"></i>
-              </div>
-              <div class="features-text">
-                <h4>Ready for Business or App</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="750ms">
-            <div class="features">
-              <div class="icon">
-                <i class="mdi-action-favorite"></i>
-              </div>
-              <div class="features-text">
-                <h4>Crafted with Love</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="850ms">
-            <div class="features">
-              <div class="icon">
-                <i class="mdi-hardware-phonelink"></i>
-              </div>
-              <div class="features-text">
-                <h4>Fully Responsive Layout</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-            </div>
-          </div>   
-        </div>
-      </div>
-    </section>
-
-    <section id="why" class="section">
-      <div class="container">
-        
-        <div class="row">     
-
-          <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/img1.png" alt="">
-          </div>
-
-          <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="pull-left content">
-              <h2>This is Why You Will <br> Love Pluto</h2>
-              <p>
-                Material UI Bootstrap APP and Business Template orem ipsum <br>
-                dolor sit amet, consectetur adipIusto quisquam idodit dolore inventore <br>
-                eumetur adipIusto quisquam idodit dolore inventore eum'
-                dolor sit amet, consectetur adipIusto quisquam idodit dolore inventore <br>
-              </p>
-              <ul class="list-item">
-                <li><i class="mdi-action-done"></i>OffCanvas Menu</li>
-                <li><i class="mdi-action-done"></i>Based on Material design</li>
-                <li><i class="mdi-action-done"></i>Free to Use</li>
-                <li><i class="mdi-action-done"></i>Built-with Bootstrap 3.5.x</li>
-                <li><i class="mdi-action-done"></i>Refreshing Designß</li>
-              </ul>
-              <a href="javascript:void(0)" class="btn btn-lg btn-primary">Downoad Now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <section id="main-features" class="section main-feature-gray">
-      <div class="container">
-
-        <div class="row">   
-          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                Sync with the app to analyze your fitness
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/fet1.png" class="img-responsive" alt="">
-          </div>  
-
-        </div>
-
-      </div>
-    </section>
-
-     <section id="main-features" class="section">
-      <div class="container">
-
-
-        <div class="row">   
-          <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/fet2.png" class="img-responsive" alt="">
-          </div>    
-
-          <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                Set a goal and improve your lifestyle
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-              </p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-    </section>
-
-     <section id="main-features" class="section main-feature-gray">
-      <div class="container">
-
-        <div class="row">   
-          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                Start a Well-controlled Day!
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/fet3.png" class="img-responsive" alt="">
-          </div>  
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="cta">
-      <div class="container">
-        <div class="row text-center">         
-            <h3 class="title-small wow bounce" data-wow-duration="1000ms" data-wow-delay="300ms">Join Us Today and Change Yourself</h3>
-             <a href="javascript:void(0)" class="btn btn-lg btn-border">Sign Up</a>
-          </div>
-      </div>
-    </section>
-
-    <section id="screenshot" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Portfolio</h1>
-          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Material UI Bootstrap APP and Business Template</h2>
-            <div class="text-center">
-                <h3><a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/">You are Using Free Version, Purchase Full Version to Get All Elements/Pages</a></h3>
-                <a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/" class="btn btn-larg btn-primary">Purchase Now</a>
-            </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section id="other-features">
-      <div class="container">
-        <div class="section-header">
-          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Other Features</h1>
-          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Who seeks after it and wants to have it</h2>
-        </div> 
-        <div class="row">
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="features-content">
-              <div class="icon hi-icon-effect-3b">
-                <i class="mdi-action-settings"></i>
-              </div>
-              <h3>Customization</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-action-lock-outline"></i>
-              </div>
-              <h3>Security</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-file-cloud-queue"></i>
-              </div>
-              <h3>Cloud</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1000ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-social-person-outline"></i>
-              </div>
-              <h3>Analtyics</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1200ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-action-grade"></i>
-              </div>
-              <h3>Performance</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1400ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-content-flag"></i>
-              </div>
-              <h3>Network</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1600ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-communication-messenger"></i>
-              </div>
-              <h3>Support</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1800ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-action-settings-power"></i>
-              </div>
-              <h3>Easy</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="testimonial" class="section">
-      <div class="container">
-        <div class="section-header text-center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-          <h1 class="section-title">What People Says</h1>
-          <h2 class="section-subtitle">Material UI Bootstrap APP and Business Template</h2>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#testimonial-carousel" data-slide-to="1"></li>
-                <li data-target="#testimonial-carousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="item active text-center">               
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="meta">
-                    <p>Web excutive <span><a href="http://wingthemes.com/">WingThemes</a></span></p>
-                  </div>
+            <section id="estrutura" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura.jpg" data-lightbox="example-set" data-title="Estrutura">
+                                <img src="img/estrutura/estrutura.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Estrutura</h3>
+                                <p>O corpo da estrutura padrão das aplicações web está divido em 4 partes, sendo elas topo, barra de acessibilidade, menu de aplicação lateral e container para desenvolimento dos casos de uso. </p>
+                                <p>A "estrutura padrão" está preparada para se adaptar em diversas resoluções.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura-responsive.jpg" data-lightbox="example-set" data-title="Estrutura">
+                            <img src="img/estrutura/estrutura-responsive.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="item text-center">                
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="meta">
-                    <p>Web excutive <span><a href="http://graygrids.com/">GrayGrids</a></span></p>
-                  </div>
+            </section>
+
+            <section id="topo" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <img src="img/features/fet2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Topo</h3>
+                                <p>Detalhe</p>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item text-center">                
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="meta">
-                    <p>Web excutive <span><a href="http://landingbow.com/">LandinBow</a></span></p>
-                  </div>
+            </section>
+
+            <section id="barra-de-ferramentas" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <img src="img/features/fet2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Barra de Ferramentas</h3>
+                                <p>Detalhe</p>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </section>
 
-
-    <section id="counter" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-get-app"></i>
-              </div>
-              <h3 class="timer">39000</h3>
-              <hr>
-              <h5>
-                Free Downloads
-              </h5>          
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-face-unlock"></i>
-              </div>
-              <h3 class="timer">1046</h3>
-              <hr>
-              <h5>
-                Premium Users
-              </h5>          
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-grade"></i>
-              </div>
-              <h3 class="timer">6345</h3>
-              <hr>
-              <h5>
-                Five Start Reviews
-              </h5>          
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="900ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-trending-up"></i>
-              </div>
-              <h3 class="timer">18325</h3>
-              <hr>
-              <h5>
-                Active Installs
-              </h5>          
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="clients" class="section">
-      <div class="container">
-        
-        <div class="section-header text-center">
-          <h1 class="section-title wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Featured on</h1>
-          <h2 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">Material UI Bootstrap APP and Business Template</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img1.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img2.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img3.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img4.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">That's Where We Are</h2>
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-maps-map"></i>
-                  </div>
-                  <h4>Location</h4>
-                  <p>NSW, Sydney, Australia</p>
+            <section id="menu-laterais" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <img src="img/features/fet2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Menu Lateral</h3>
+                                <p>Detalhe</p>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-content-mail"></i>
-                  </div>
-                  <h4>Email</h4>
-                  <p>office@graygrids.com</p>
-                </div>
-              </div>
-              <div class="clear"></div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-action-settings-phone"></i>
-                  </div>
-                  <h4>Phone Number</h4>
-                  <p>0753 016 572</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-action-thumb-up"></i>
-                  </div>
-                  <h4>Social Media</h4>
-                  <p>@GrayGrids</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">Love to Hear From You</h2>
+            </section>
 
-            <div class="text-center">
-                <h3><a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/">You are Using Free Version, Purchase Full Version to Get All Elements/Pages</a></h3>
-                <a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/" class="btn btn-larg btn-primary">Purchase Now</a>
-            </div>
+            <section id="container-principal" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <img src="img/features/fet2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Container Principal</h3>
+                                <p>Detalhe</p>
+                                <p>Descrição</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-
-          </div>
+            <section id="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="copyright-text">
+                                © Secretaria de Gestão e Planejamento do Estado de Goiás
+                                <!--<a href="http://graygrids.com/">SCTI</a>-->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>    
 
-    <div class="map-area">      
-      <div class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6853.31334931688!2d149.5710983929677!3d-33.43399308961885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x63680231a1016da2!2sWestern+Region+Academy+of+Sport!5e0!3m2!1sen!2sbd!4v1436826340086" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
-    </div>
 
-    <section id="footer">
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>Products</h3>
-              <ul>
-                <li><a href="http://wingthemes.com/">WingThemes</a>
-                </li>
-                <li><a href="http://graygrids.com/">Graygrids</a>
-                </li>
-                <li><a href="http://wpbean.com/">WPBean</a>
-                </li>
-                <li><a href="http://landingbow.com/">Landingbow</a>
-                </li>
-                <li><a href="http://freebiescircle.com/">FreebiesCicle</a>
-                </li>               
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>FAQs</h3>
-              <ul>
-                <li><a href="#">Why choose us?</a>
-                </li>
-                <li><a href="#">Where we are?</a>
-                </li>
-                <li><a href="#">Fees</a>
-                </li>
-                <li><a href="#">Guarantee</a>
-                </li>
-                <li><a href="#">Discount</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>About</h3>
-              <ul>
-                <li><a href="#">Career</a>
-                </li>
-                <li><a href="#">Partners</a>
-                </li>
-                <li><a href="#">Team</a>
-                </li>
-                <li><a href="#">Clients</a>
-                </li>
-                <li><a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>Find us on</h3>
-              <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-            </div>
-          </div>
-        </div>  
-      </div>      
-      <!-- Go to Top Link -->
-      <a href="#home" class="btn btn-primary back-to-top">
-      <i class=" mdi-hardware-keyboard-arrow-up"></i>
-      </a>
-    </section> 
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.mmenu.min.all.js"></script>
+        <script src="js/count-to.js"></script>
+        <script src="js/jquery.inview.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/smooth-on-scroll.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/main.js"></script>
 
-    <section id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="copyright-text">
-             © Pluto 2015 All right reserved. Designed and Developed by 
-              <a href="http://graygrids.com/">
-                GrayGrids
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>     
-    </div>  
-		
+        <!--<script src="js/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>-->
 
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ripples.min.js"></script>
-    <script src="js/material.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.mmenu.min.all.js"></script> 
-    <script src="js/count-to.js"></script>   
-    <script src="js/jquery.inview.min.js"></script>     
-    <script src="js/classie.js"></script>
-    <script src="js/jquery.nav.js"></script>      
-    <script src="js/smooth-on-scroll.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/main.js"></script>
+        <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.js?v=2.1.5"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-    
+        <!-- Add Thumbnail helper (this is optional) -->
+        <link rel="stylesheet" type="text/css" href="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+        <script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
-    <script>
-        $(document).ready(function() {
-            // This command is used to initialize some elements and make them work properly
-            $.material.init();
-        });
-    </script>
+        <script>
+            $(document).ready(function () {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
 
-  </body>
+                $('.fancybox-thumbs').fancybox({
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+
+                    closeBtn  : false,
+                    arrows    : false,
+                    nextClick : true,
+
+                    helpers : {
+                        thumbs : {
+                            width  : 50,
+                            height : 50
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+
+
+
+    </body>
 
 </html>
