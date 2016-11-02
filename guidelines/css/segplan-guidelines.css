@@ -10,8 +10,13 @@
     padding-left: 40px;
     text-transform: none;
 }
-.navbar .navbar-nav li a { font-weight:700; }
+.navbar .navbar-nav li a { font-weight:700;  padding: 4px 20px;  font-family: 'Raleway'; font-size: 12px; }
 .navbar .navbar-nav li.subnivel a { text-transform: none; font-weight:400;}
+
+.section { padding: 10px 0; }
+.feature-item p , .feature-item ul li{text-align: justify; }
+ul li{list-style: circle;}
+.container { margin-left: 17%; }
 
 
 

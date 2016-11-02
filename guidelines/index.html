@@ -17,6 +17,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome CSS -->
         <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
         <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
         <link href="css/material.min.css" rel="stylesheet">
         <link href="css/ripples.min.css" rel="stylesheet">
@@ -38,8 +40,14 @@
                 <a class="navbar-brand logo-right" href="javascript:void(0)"><!--<i class="mdi-image-timelapse"></i>UI Goiás--> <img src="img/features/governo-estado-inovador-pas.png"></a>
             </div>
             <ul class="nav navbar-nav main-navigation">
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="#why">Princípios</a></li>
+                <li class="active"><a href="#ui-goias">UI Goiás</a></li>
+
+                    <li><a href="#objetivo">Objetivo</a></li>
+                    <li class="subnivel"><a href="#apresentacao">Apresentação</a></li>
+                    <li class="subnivel"><a href="#ux">Experiência do Usuário</a></li>
+                    <li class="subnivel"><a href="#conceitos">Conceitos</a></li>
+                    <li class="subnivel"><a href="#principios">Princípios</a></li>
+
                 <li><a href="#interface-de-usuario">Interface de Usuário</a></li>
                     <li class="subnivel"><a href="#estrutura">Estrutura</a></li>
                     <li class="subnivel"><a href="#topo">Topo</a></li>
@@ -47,7 +55,7 @@
                     <li class="subnivel"><a href="#menu-laterais">Menus Laterais</a></li>
                     <li class="subnivel"><a href="#container-principal">Container Principal</a></li>
 
-                <li><a href="#why">Padrões</a>
+                <li><a href="#padroes">Padrões</a>
 
                     <li class="subnivel"><a href="#controles">Controles</a></li>
                     <li class="subnivel"><a href="#listatem">Listagens</a></li>
@@ -101,8 +109,7 @@
         </div >
 
         <div class="content-wrap">
-            <header class="hero-area" id="home">
-
+            <header class="hero-area" id="ui-goias">
                 <div class="container">
                     <div class="col-md-12">
                         <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix"
@@ -123,27 +130,133 @@
                         <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">UI Goiás Guideline</h1>
                         <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Diretrizes de design de interface de usuário para sistemas e apps do Estado de Goiás.</p>
                     </div>
+                </div>
             </header>
 
-            <section id="why" class="section">
+            <section id="objetivo" class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/features/ipad-mockup-portal-final.png" data-lightbox="example-set" data-title="Portal Ipad">
-                                <img src="img/features/ipad-mockup-portal-final.png" alt="" style="border: 5px solid #fff; width:58%;">
-                            </a>
+                        <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Objetivo</h3>
+                                <p>O presente documento tem como objetivo apresentar uma proposta de padrão de interface para as aplicações web do Governo do Estado de Goiás e suas secretarias.</p>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="pull-left content">
-                                <h2>Princípios</h2>
-                                <p></p>
-                                <ul class="list-item">
-                                    <li><i class="mdi-action-done"></i>Responsividade</li>
-                                    <li><i class="mdi-action-done"></i>Acessibilidade</li>
-                                    <li><i class="mdi-action-done"></i>Padrões</li>
+                    </div>
+                </div>
+            </section>
+
+            <section id="apresentacao" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Apresentação</h3>
+                                <p>
+                                    A proposta deste trabalho é criar e implantar uma identidade visual única para
+                                    aplicações web do estado de Goiás. Identidade visual, como o próprio nome
+                                    diz, é o conjunto de elementos que compõem a apresentação visual de uma
+                                    empresa, produto ou serviço. Uma identidade visual sólida é um item indispensável
+                                    para que os usuários sintam se seguros de que estão interagindo em um ambiente
+                                    confiável. Por isso é extremamente necessário que alguns itens estejam presentes
+                                    em todas as páginas de uma aplicação.
+                                    Sendo assim, o padrão proposto será apresentado, bem como algumas
+                                    informações a respeito de usabilidade para aplicações web.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ux" class="section">
+                <div class="container">
+                    <div class="row">
+                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura.jpg" data-lightbox="example-set" data-title="Estrutura">
+                                <img src="img/estrutura/estrutura.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>-->
+                        <div class="col-md-12 col-sm-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Experiência do Usuário</h3>
+                                <p>O estudo da experiência do usuário em uma aplicação web é importante para torna-la mais eficiente e produtiva.</p>
+                                <p>Se um aplicativo possui uma interface de uso difícil, confusa, cansativa ou mal organizada, fatalmente o usuário não irá utilizala.</p>
+                                <p>Cada minuto que o usuário gasta tentando encontrar uma função é um tempo perdido, precioso para que ele cumpra uma tarefa.</p>
+                                <p>Para desenvolvermos uma usabilidade adequada, é necessário que se pense desde o início do projeto naquele que é o maior interessado em que o aplicativo seja simples e fácil: o usuário final.</p>
+                                <p>Deve se conhecer o escopo, as limitações e os anseios do usuário desde o início do projeto, voltando os olhos não só para a robustez e a eficiência do sistema, mas também para as necessidades do usuário.</p>
+                                <p>Uma aplicação de design voltada para o usuário, utilizando avaliações de usabilidade durante todo o ciclo de desenvolvimento, resulta em vários benefícios, como:</p>
+                                <ul>
+                                    <li><b>Menores custos de desenvolvimento</b>: muitos erros de usabilidade são devidos a uma má concepção da mesma.</li>
+                                    <li><b>Redução do tempo de projeto</b>: a correção de erros em fases iniciais do projeto, diminui a necessidade de um retrabalho em relação ao desenvolvimento, o que acarreta uma diminuição no tempo do projeto.</li>
+                                    <li><b>Menores custos de manutenção e suporte</b>: um aplicativo fácil de aprender e usar resulta em redução de custos de aprendizagem e de suporte. Basicamente, uma aplicação satisfatória preenche os seguintes requisitos:</li>
+                                    <li><b>Simplicidade</b>: o usuário não quer perder tempo com uma interface complicada, que exija muitos passos para efetuar uma tarefa simples.</li>
+                                    <li><b>Clareza</b>: temos sempre que ter em mente o seguinte princípio: “o usuário não quer – aliás, não deve – pensar”. Isso que dizer que o usuário vai se irritar se tiver de decifrar uma interface que tenha ícones estranhos ou termos ambíguos nos menus e botões.</li>
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="conceitos" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Conceitos</h3>
+                                <p> Alguns elementos devem ser considerados no processo de produção de interfaces. Estes elementos são: usabilidade, consistência, navegabilidade, interatividade, clareza, flexibilidade, funcionalidade e legibilidade.</p>
+                                <ul>
+                                    <li><b>Usabilidade</b>, segundo a norma ISO 9241, é a capacidade que um sistema interativo oferece a seu usuário, em um determinado contexto de operação, para a realização de tarefas com qualidade e eficiência. Podemos considerar como uma propriedade que um aplicativo deve possuir para que os usuários possam utilizálo para realizar bem as tarefas que necessitam.</li>
+                                    <li><b>Consistência</b>, refere-se à coerência do uso dos itens de interface. Todos os elementos que possuem as mesmas funções devem apresentar as mesmas características gráficas e operacionais.</li>
+                                    <li><b>Navegabilidade</b> é capacidade que a interface do aplicativo possui de facilitar ao usuário chegar ao seu destino da maneira mais eficiente possível.</li>
+                                    <li><b>Interatividade</b> são um conjunto de operações ou atividades que o usuário põe em prática com os objetos de tal modo a alterar o ambiente.</li>
+                                    <li><b>Clareza</b> diz respeito à evidência de se encontrar os itens principais da interface, ou seja, eles devem ser claros o suficiente para que não haja dúvida sobre sua funcionalidade e seu uso. Se não são evidentes, devem ser autoexplicativos.</li>
+                                    <li><b>Flexibilidade</b> é a capacidade da interface de se adaptar as várias ações do usuário.</li>
+                                    <li><b>Funcionalidade</b> consiste nos elementos da interface cumprirem com eficiência o papel que lhes cabe. Deve-se combinar a clareza da função proposta com a eficiência na tarefa de realizar esta função.</li>
+                                    <li><b>Legibilidade</b> diz respeito às características lexicais das informações apresentadas na tela que possam dificultar ou facilitar a leitura dessa informação (brilho do caractere, contraste letra/fundo, tamanho da fonte, espaçamento entre palavras, espaçamento entre linhas, espaçamento de parágrafos, comprimento da linha, etc.).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="principios" class="section">
+                <div class="container">
+                    <div class="row">
+                        <!--<div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/features/ipad-mockup-portal-final.png" data-lightbox="example-set" data-title="Portal Ipad">
+                                <img src="img/features/ipad-mockup-portal-final.png" alt="" style="border: 5px solid #fff; width:58%;">
+                            </a>
+                        </div>-->
+                        <div class="col-md-10 col-sm-10 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="pull-left content">
+                                <h3 class="title-small">Princípios</h3>
+                                <p>Alguns princípios devem ser levados em consideração no projeto da interface de uma aplicação. Veremos algumas características a seguir que servirão como base para os desenvolvedores no desenho da interface.</p>
+                                <h3>Principios básicos de usabilidade</h3>
+                                <p>O desenho da aplicação deve ser centrado no usuário, pois nem sempre o que é bom para o desenvolvedor é bom para o usuário.</p>
+                                <ul>
+                                    <li>Deve-se conhecer o comportamento, hábitos e habilidades do usuário.</li>
+                                    <li>O usuário deve participar da elaboração do aplicativo, testandoo e avaliandoo de acordo com suas necessidades.</li>
+                                    <li>Peça confirmação para ações de risco.</li>
+                                    <li>Ações que não forem pertinentes devem ficar indisponíveis para o usuário.</li>
+                                    <li>Procure otimizar operações para usuário, com uso de atalhos ou através de sequências de ações.</li>
+                                    <li>Ajude o usuário iniciarse no sistema, apresentando de forma intuitiva os recursos disponíveis.</li>
+                                    <li>Consistência e simplicidade, sempre!</li>
+                                    <li>Apresente recursos familiarizados pelo usuário e use (com cuidado) analogias do mundo real.</li>
+                                    <li>Apresente mensagens claras e positivas para o usuário.</li>
+                                    <li>Se possível, permita que o usuário possa reverter situações e ações.</li>
+                                    <li>O usuário espera e deseja consistência, ele sentese familiarizado com a interface e não se sente preocupado como será a apresentação ou como o sistema irá reagir após uma determinada ação.</li>
+                                    <li>A tela deve ser simples. Apresentação de dados e objetos desnecessários, que dão a impressão de que a tela é uma grande aglomeração de informações, deve ser evitada.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -153,9 +266,7 @@
                     <div class="row">
                         <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Interface de Usuário</h3>
-                                <p>Detalhe</p>
-                                <p>Descrição</p>
+                                <h3 class="title-small">Interface de Usuário</h3><p>Detalhe</p><p>Descrição</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -194,14 +305,12 @@
             <section id="topo" class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>
+                        </div>-->
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Topo</h3>
-                                <p>Detalhe</p>
-                                <p>Descrição</p>
+                                <h3 class="title-small">Topo</h3><p>Detalhe</p><p>Descrição</p>
                             </div>
                         </div>
                     </div>
@@ -211,14 +320,12 @@
             <section id="barra-de-ferramentas" class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>
+                        </div>-->
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Barra de Ferramentas</h3>
-                                <p>Detalhe</p>
-                                <p>Descrição</p>
+                                <h3 class="title-small">Barra de Ferramentas</h3><p>Detalhe</p><p>Descrição</p>
                             </div>
                         </div>
                     </div>
@@ -228,14 +335,12 @@
             <section id="menu-laterais" class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>
+                        </div>-->
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Menu Lateral</h3>
-                                <p>Detalhe</p>
-                                <p>Descrição</p>
+                                <h3 class="title-small">Menu Lateral</h3><p>Detalhe</p><p>Descrição</p>
                             </div>
                         </div>
                     </div>
@@ -245,14 +350,12 @@
             <section id="container-principal" class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>
+                        </div>-->
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Container Principal</h3>
-                                <p>Detalhe</p>
-                                <p>Descrição</p>
+                                <h3 class="title-small">Container Principal</h3><p>Detalhe</p><p>Descrição</p>
                             </div>
                         </div>
                     </div>
