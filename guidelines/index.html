@@ -56,6 +56,7 @@
                     <li class="subnivel"><a href="#container-principal">Container Principal</a></li>
 
                 <li><a href="#padroes">Padrões</a>
+                    <li><a href="#fluxos">Fluxo</a>
 
                     <li class="subnivel"><a href="#controles">Controles</a></li>
                     <li class="subnivel"><a href="#listatem">Listagens</a></li>
@@ -68,7 +69,6 @@
                     <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
                     <li class="subnivel"><a href="#pesquisas">Pesquisas</a></li>
                     <li class="subnivel"><a href="#recarregar">Recarregar</a></li>
-
 
                 <li><a href="#estilos">Estilos</a></li>
                 <li><a href="#componentes">Componentes</a></li>
@@ -94,6 +94,7 @@
                     <li class="subnivel"><a href="#widgets">Widgets</a></li>
 
                 <li><a href="#usabilidade">Usabilidade</a></li>
+                    <li class="subnivel"><a href="#responsividade">Responsividade</a></li>
                     <li class="subnivel"><a href="#fontes">Ajuste de Fontes</a></li>
                     <li class="subnivel"><a href="#contraste">Ajuste de Contraste</a></li>
                     <li class="subnivel"><a href="#relevo">Ajuste de Relevo</a></li>
@@ -282,8 +283,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura.jpg" data-lightbox="example-set" data-title="Estrutura">
-                                <img src="img/estrutura/estrutura.jpg" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura-areas.png" data-lightbox="example-set" data-title="Estrutura">
+                                <img src="img/estrutura/estrutura-areas.png" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -294,23 +295,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-2 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                        <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura-responsive.jpg" data-lightbox="example-set" data-title="Estrutura">
-                            <img src="img/estrutura/estrutura-responsive.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
                 </div>
             </section>
 
-            <section id="topo" class="section">
+            <section id="topo" class="section  main-feature-gray">
                 <div class="container">
                     <div class="row">
-                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>-->
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/topo-detalhe.png" data-lightbox="example-set" data-title="Topo">
+                                <img src="img/estrutura/topo-detalhe.png" class="img-responsive" alt="Topo">
+                            </a>
+                        </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Topo</h3><p>Detalhe</p><p>Descrição</p>
+                                <h3 class="title-small">Topo</h3>
+                                <p>O Topo dos sistemas deverá sempre exibir o <b>logo</b> do sistema <b>ou ícone</b> que o represente, o <b>nome do sistema</b>, o <b>nome da secretaria gestora</b> do sistema e a marca do <b>Governo do Estado</b>.
+                                    Em alguns casos, pode exibir o nome da Subsecretaria responsável. Essas informações são importantes porque dão uma unidade visual a interface.
+                                    O topo é fixo em todas as telas, porém e não é necessário janelas de dialógo.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -320,12 +322,15 @@
             <section id="barra-de-ferramentas" class="section">
                 <div class="container">
                     <div class="row">
-                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>-->
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/barra-de-acessibilidade-detalhada.png" data-lightbox="example-set" data-title="Barra de Acessibilidade">
+                                <img src="img/estrutura/barra-de-acessibilidade-detalhada.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Barra de Ferramentas</h3><p>Detalhe</p><p>Descrição</p>
+                                <h3 class="title-small">Barra de Ferramentas</h3>
+                                <p>Descrição</p>
                             </div>
                         </div>
                     </div>
@@ -335,12 +340,21 @@
             <section id="menu-laterais" class="section">
                 <div class="container">
                     <div class="row">
-                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>-->
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/menu-detalhado.png" data-lightbox="example-set" data-title="Menu de aplicações">
+                                <img src="img/estrutura/menu-detalhado.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Menu Lateral</h3><p>Detalhe</p><p>Descrição</p>
+                                <h3 class="title-small">Menu Lateral</h3>
+                                <p>Menus são elementos de navegação da interface que devem apresentar as  opções de navegação da aplicação.
+                                    A escolha do uso de menus laterais permite uma maior visibilidade a todos os ítens de menu sem que os mesmos sobreponham a área útil dos formulários, facilitando assim ao usuário memorizar todas as operações disponíveis na aplicação.
+                                    O usuário deve ter opção de expandir e recolher todos os ítens de menu da forma que mais lhe atenda.
+                                </p>
+                                <p>Agrupe adequadamente todos os ítens de menu de acordo com sua função evite ao máximo criar subníveis.
+                                    A nomenclatura do menu e do submenu deve ser bem clara para o que usuário possa identificar exatamente o que aquela função se propõe.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -350,12 +364,17 @@
             <section id="container-principal" class="section">
                 <div class="container">
                     <div class="row">
-                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <img src="img/features/fet2.png" class="img-responsive" alt="">
-                        </div>-->
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/container-prinpcial.png" data-lightbox="example-set" data-title="Container Principal">
+                                <img src="img/estrutura/container-prinpcial.png" class="img-responsive" alt="Container Principal">
+                            </a>
+                        </div>
+
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Container Principal</h3><p>Detalhe</p><p>Descrição</p>
+                                <h3 class="title-small">Container Principal</h3>
+                                <p>Este é o container principal da aplicação. Esta área é destinada as informações da aplicação, como por exemplo: listagem dos dados, cadastro de informações, relatórios.</p>
+                                <p>O container principal deve sempre ser identificado e sempre que possível também deve ser dividido em sessões para melhor orientação do usuário.</p>
                             </div>
                         </div>
                     </div>
