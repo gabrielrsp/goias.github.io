@@ -1,3 +1,8 @@
+@media (min-width: 1200px) {
+  .container {
+    margin-left: 18%;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .title-small {
     font-size: 20px;
@@ -16,6 +21,7 @@
   #cta h2 {
     font-size: 18px;
   }
+  .container{margin-left: 2%;}
 }
 @media (max-width: 568px) {
   #portfolio .portfolio-items figure {
@@ -27,6 +33,7 @@
   #contact .info-inner {
     padding-left: 15px;
   }
+  .container{margin-left: 13%;}
 }
 @media (max-width: 480px) {
   .section {
@@ -43,7 +50,7 @@
     line-height: 28px;
   }
   .navbar .navbar-header {
-    padding: 13px 22px;
+    padding: 13px 0;
     float: left;
   }
   .navbar .navbar-right {
@@ -127,6 +134,7 @@
   #contact .info h4 {
     font-size: 18px;
   }
+  .container{margin-left: 2%;}
 }
 @media (max-width: 640px) and (min-width: 960px) {
   .navbar-header {
@@ -138,6 +146,7 @@
     float: right;
     width: 100px;
   }
+  .container{margin-left: 13%;}
 }
 @media (max-width: 767px) and (min-width: 479px) {
   .navbar-header {
@@ -149,4 +158,5 @@
     float: right;
     width: 100px;
   }
+  .container{margin-left: 3%;}
 }

@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
 
-        <link rel="shortcut icon" href="https://www.intra.goias.gov.br/pas-acesso-app/img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="https://www.intra.goias.gov.br/pas-acesso-app/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
         <meta name="description" content="Responsive Bootstrap Landing Page Template">
         <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
@@ -34,84 +34,94 @@
 
     <body>
 
-        <div class="navbar navbar-invers menu-wrap" style="    overflow-x: auto; overflow-y: auto;" >
+        <div class="navbar navbar-invers menu-wrap" style="overflow-x: auto; overflow-y: auto;" >
 
             <div class="navbar-header text-center">
                 <a class="navbar-brand logo-right" href="javascript:void(0)"><!--<i class="mdi-image-timelapse"></i>UI Goiás--> <img src="img/features/governo-estado-inovador-pas.png"></a>
             </div>
+            <div class="text-center" style="text-align: left; margin-bottom: 40px;">
+                <a href="#ui-goias"
+                   style="
+                    font-family: RobotoDraft,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+                    font-weight: 100;
+                    font-size: 22px;
+                    margin-left: 18px;
+                    color: #fff;"> UI Goiás Guideline<div class="ripple-wrapper"></div></a>
+            </div>
+
+
             <ul class="nav navbar-nav main-navigation">
-                <li class="active"><a href="#ui-goias">UI Goiás</a></li>
+                <!--<li class="active"><a href="#ui-goias">UI Goiás Guideline</a></li>-->
+                <li>                 <a href="#objetivo">Objetivo</a></li>
+                <li class="subnivel"><a href="#apresentacao">Apresentação</a></li>
+                <li class="subnivel"><a href="#ux">Experiência do Usuário</a></li>
+                <li class="subnivel"><a href="#conceitos">Conceitos</a></li>
+                <li class="subnivel"><a href="#principios">Princípios</a></li>
 
-                    <li><a href="#objetivo">Objetivo</a></li>
-                    <li class="subnivel"><a href="#apresentacao">Apresentação</a></li>
-                    <li class="subnivel"><a href="#ux">Experiência do Usuário</a></li>
-                    <li class="subnivel"><a href="#conceitos">Conceitos</a></li>
-                    <li class="subnivel"><a href="#principios">Princípios</a></li>
+                <li>                 <a href="#interface-de-usuario">Interface de Usuário</a></li>
+                <li class="subnivel"><a href="#estrutura">Estrutura</a></li>
+                <li class="subnivel"><a href="#topo">Topo</a></li>
+                <li class="subnivel"><a href="#barra-de-ferramentas">Barra de Ferramentas</a></li>
+                <li class="subnivel"><a href="#menu-laterais">Menus Laterais</a></li>
+                <li class="subnivel"><a href="#container-principal">Container Principal</a></li>
 
-                <li><a href="#interface-de-usuario">Interface de Usuário</a></li>
-                    <li class="subnivel"><a href="#estrutura">Estrutura</a></li>
-                    <li class="subnivel"><a href="#topo">Topo</a></li>
-                    <li class="subnivel"><a href="#barra-de-ferramentas">Barra de Ferramentas</a></li>
-                    <li class="subnivel"><a href="#menu-laterais">Menus Laterais</a></li>
-                    <li class="subnivel"><a href="#container-principal">Container Principal</a></li>
+                <li>                 <a href="#padroes">Padrões</a></li>
+                <li class="subnivel"><a href="#inicial">Tela de Apresentação</a>
 
-                <li><a href="#padroes">Padrões</a>
-                    <li class="subnivel"><a href="#crud-01">Crud 01 - Form com Lista</a>
-                    <li class="subnivel"><a href="#crud-02">Crud 02 - Lista sem Form</a>
-                    <li class="subnivel"><a href="#crud-02.1">Crud 02 - Lista sem Form</a>
-                    <li class="subnivel"><a href="#fluxo-01">Fluxo 01 - Form com Lista</a>
-                    <li class="subnivel"><a href="#fluxo-02">Fluxo 02 - Lista para Form :: Adicionar</a>
-                    <li class="subnivel"><a href="#fluxo-02.1">Fluxo 02.1 - Lista para Form :: Alterar</a>
-                    <li class="subnivel"><a href="#fluxo-02.2">Fluxo 02.2 - Lista para Form :: Excluir</a>
+                <li class="subnivel"><a href="#layout-pesquisa-lista">Layout Filtros</a>
+                <li class="subnivel"><a href="#crud-01-lista">Crud 01 :: Lista Paginada</a>
+                <li class="subnivel"><a href="#crud-01-lista-preenchida">Crud 01.1 :: Lista Paginada Preenchida</a>
+                <li class="subnivel"><a href="#fluxo-01">Fluxo 01 - Form com Lista</a>
+                <li class="subnivel"><a href="#fluxo-02">Fluxo 02 - Lista para Form :: Adicionar</a>
+                <li class="subnivel"><a href="#fluxo-02.1">Fluxo 02.1 - Lista para Form :: Alterar</a>
+                <li class="subnivel"><a href="#fluxo-02.2">Fluxo 02.2 - Lista para Form :: Excluir</a>
 
-                    <li class="subnivel"><a href="#formularios">Formulários</a></li>
-                    <li class="subnivel"><a href="#controles">Controles</a></li>
-                    <li class="subnivel"><a href="#listatens">Listagens</a></li>
-                    <li class="subnivel"><a href="#relatorios">Relatórios</a></li>
-                    <li class="subnivel"><a href="#confirmacao">Confirmações</a></li>
-                    <li class="subnivel"><a href="#formato-dados">Formato de Dados</a></li>
-                    <li class="subnivel"><a href="#validacoes-campos">Validações de Campos</a></li>
-                    <li class="subnivel"><a href="#validacoes-regras">Validações de Regras</a></li>
-                    <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
-                    <li class="subnivel"><a href="#pesquisas">Pesquisas</a></li>
-                    <li class="subnivel"><a href="#recarregar">Recarregar</a></li>
+                <li class="subnivel"><a href="#formularios">Formulários</a></li>
+                <li class="subnivel"><a href="#controles">Controles</a></li>
+                <li class="subnivel"><a href="#listatens">Listagens</a></li>
+                <li class="subnivel"><a href="#relatorios">Relatórios</a></li>
+                <li class="subnivel"><a href="#confirmacao">Confirmações</a></li>
+                <li class="subnivel"><a href="#formato-dados">Formato de Dados</a></li>
+                <li class="subnivel"><a href="#validacoes-campos">Validações de Campos</a></li>
+                <li class="subnivel"><a href="#validacoes-regras">Validações de Regras</a></li>
+                <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
+                <li class="subnivel"><a href="#pesquisas">Pesquisas</a></li>
+                <li class="subnivel"><a href="#recarregar">Recarregar</a></li>
 
+                <li>                 <a href="#componentes">Componentes</a></li>
+                <li class="subnivel"><a href="#botoes-navegacao">Botões de Navegação</a></li>
+                <li class="subnivel"><a href="#botoes-estilizados">Botões Estilizados</a></li>
+                <li class="subnivel"><a href="#botoes-flutuantes">Botões Flutuantes</a></li>
+                <li class="subnivel"><a href="#botoes">Botões</a></li>
+                <li class="subnivel"><a href="#datatables">Datatables</a></li>
+                <li class="subnivel"><a href="#input-tags">InputTags</a></li>
+                <li class="subnivel"><a href="#modais">Modais</a></li>
+                <li class="subnivel"><a href="#dialogos">Diálogos</a></li>
+                <li class="subnivel"><a href="#divisores">Divisores</a></li>
+                <li class="subnivel"><a href="#listas">Listas</a></li>
+                <li class="subnivel"><a href="#listas-controles">Controle de Listas</a></li>
+                <li class="subnivel"><a href="#listas-controles">Pickers</a></li>
+                <li class="subnivel"><a href="#progressos-atividades">Progresso e Atividade</a></li>
+                <li class="subnivel"><a href="#sliders">Sliders</a></li>
+                <li class="subnivel"><a href="#steppers">Steppers</a></li>
+                <li class="subnivel"><a href="#subheaders">Sub Headers</a></li>
+                <li class="subnivel"><a href="#tabs">Tabs</a></li>
+                <li class="subnivel"><a href="#text-fields">Text Fields</a></li>
+                <li class="subnivel"><a href="#toolbars">Toolbars</a></li>
+                <li class="subnivel"><a href="#widgets">Widgets</a></li>
 
-                <li><a href="#estilos">Estilos</a></li>
-                <li><a href="#componentes">Componentes</a></li>
-                    <li class="subnivel"><a href="#botoes-navegacao">Botões de Navegação</a></li>
-                    <li class="subnivel"><a href="#botoes-estilizados">Botões Estilizados</a></li>
-                    <li class="subnivel"><a href="#botoes-flutuantes">Botões Flutuantes</a></li>
-                    <li class="subnivel"><a href="#botoes">Botões</a></li>
-                    <li class="subnivel"><a href="#datatables">Datatables</a></li>
-                    <li class="subnivel"><a href="#input-tags">InputTags</a></li>
-                    <li class="subnivel"><a href="#modais">Modais</a></li>
-                    <li class="subnivel"><a href="#dialogos">Diálogos</a></li>
-                    <li class="subnivel"><a href="#divisores">Divisores</a></li>
-                    <li class="subnivel"><a href="#listas">Listas</a></li>
-                    <li class="subnivel"><a href="#listas-controles">Controle de Listas</a></li>
-                    <li class="subnivel"><a href="#listas-controles">Pickers</a></li>
-                    <li class="subnivel"><a href="#progressos-atividades">Progresso e Atividade</a></li>
-                    <li class="subnivel"><a href="#sliders">Sliders</a></li>
-                    <li class="subnivel"><a href="#steppers">Steppers</a></li>
-                    <li class="subnivel"><a href="#subheaders">Sub Headers</a></li>
-                    <li class="subnivel"><a href="#tabs">Tabs</a></li>
-                    <li class="subnivel"><a href="#text-fields">Text Fields</a></li>
-                    <li class="subnivel"><a href="#toolbars">Toolbars</a></li>
-                    <li class="subnivel"><a href="#widgets">Widgets</a></li>
+                <li>                 <a href="#usabilidade">Usabilidade</a></li>
+                <li class="subnivel"><a href="#responsividade">Responsividade</a></li>
+                <li class="subnivel"><a href="#fontes">Ajuste de Fontes</a></li>
+                <li class="subnivel"><a href="#contraste">Ajuste de Contraste</a></li>
+                <li class="subnivel"><a href="#relevo">Ajuste de Relevo</a></li>
+                <li class="subnivel"><a href="#cores">Ajuste de Cores</a></li>
 
-                <li><a href="#usabilidade">Usabilidade</a></li>
-                    <li class="subnivel"><a href="#responsividade">Responsividade</a></li>
-                    <li class="subnivel"><a href="#fontes">Ajuste de Fontes</a></li>
-                    <li class="subnivel"><a href="#contraste">Ajuste de Contraste</a></li>
-                    <li class="subnivel"><a href="#relevo">Ajuste de Relevo</a></li>
-                    <li class="subnivel"><a href="#cores">Ajuste de Cores</a></li>
-
-                <li><a href="#recursos">Recursos</a></li>
-                    <li class="subnivel"><a href="#paleta-cores">Paleta de Cores</a></li>
-                    <li class="subnivel"><a href="#fontes">Fontes</a></li>
-                    <li class="subnivel"><a href="#icones">Ícones</a></li>
-                    <li class="subnivel"><a href="#imagens">Imagens</a></li>
+                <li>                 <a href="#recursos">Recursos</a></li>
+                <li class="subnivel"><a href="#paleta-cores">Paleta de Cores</a></li>
+                <li class="subnivel"><a href="#fontes">Fontes</a></li>
+                <li class="subnivel"><a href="#icones">Ícones</a></li>
+                <li class="subnivel"><a href="#imagens">Imagens</a></li>
                </ul>
             <button class="close-button" id="close-button">Close Menu</button>
         </div >
@@ -123,14 +133,16 @@
                         <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix"
                              data-offset-top="200">
                             <div class="container">
-                                <div class="navbar-header">
-                                    <a class="logo-left " href="index.html"><!--<i class="mdi-image-timelapse"></i>-->Goiás - Guidelines</a>
-                                </div>
-                                <div class="navbar-right">
+
+                                <div class="navbar-right" style="margin-right: -13px;">
                                     <button class="menu-icon" id="open-button">
                                         <i class="mdi-navigation-menu"></i>
                                     </button>
                                 </div>
+                                <div class="navbar-header">
+                                    <a class="logo-left " href="index.html"><!--<i class="mdi-image-timelapse"></i>-->UI Goiás Guideline</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -153,7 +165,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="apresentacao" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -171,21 +182,14 @@
                                     Sendo assim, o padrão proposto será apresentado, bem como algumas
                                     informações a respeito de usabilidade para aplicações web.
                                 </p>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="ux" class="section">
                 <div class="container">
                     <div class="row">
-                        <!--<div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura.jpg" data-lightbox="example-set" data-title="Estrutura">
-                                <img src="img/estrutura/estrutura.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>-->
                         <div class="col-md-12 col-sm-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Experiência do Usuário</h3>
@@ -207,8 +211,6 @@
                     </div>
                 </div>
             </section>
-
-
             <section id="conceitos" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -231,9 +233,6 @@
                     </div>
                 </div>
             </section>
-
-
-
             <section id="principios" class="section">
                 <div class="container">
                     <div class="row">
@@ -250,7 +249,7 @@
                                 <p>O desenho da aplicação deve ser centrado no usuário, pois nem sempre o que é bom para o desenvolvedor é bom para o usuário.</p>
                                 <ul>
                                     <li>Deve-se conhecer o comportamento, hábitos e habilidades do usuário.</li>
-                                    <li>O usuário deve participar da elaboração do aplicativo, testandoo e avaliandoo de acordo com suas necessidades.</li>
+                                    <li>O usuário deve participar da elaboração do aplicativo, testandoo e avaliando de acordo com suas necessidades.</li>
                                     <li>Peça confirmação para ações de risco.</li>
                                     <li>Ações que não forem pertinentes devem ficar indisponíveis para o usuário.</li>
                                     <li>Procure otimizar operações para usuário, com uso de atalhos ou através de sequências de ações.</li>
@@ -259,7 +258,7 @@
                                     <li>Apresente recursos familiarizados pelo usuário e use (com cuidado) analogias do mundo real.</li>
                                     <li>Apresente mensagens claras e positivas para o usuário.</li>
                                     <li>Se possível, permita que o usuário possa reverter situações e ações.</li>
-                                    <li>O usuário espera e deseja consistência, ele sentese familiarizado com a interface e não se sente preocupado como será a apresentação ou como o sistema irá reagir após uma determinada ação.</li>
+                                    <li>O usuário espera e deseja consistência.</li>
                                     <li>A tela deve ser simples. Apresentação de dados e objetos desnecessários, que dão a impressão de que a tela é uma grande aglomeração de informações, deve ser evitada.</li>
                                 </ul>
                             </div>
@@ -268,7 +267,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="interface-de-usuario" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -285,26 +283,45 @@
                     </div>
                 </div>
             </section>
-
             <section id="estrutura" class="section">
                 <div class="container">
                     <div class="row">
+                        <!--
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura-areas.png" data-lightbox="example-set" data-title="Estrutura">
                                 <img src="img/estrutura/estrutura-areas.png" class="img-responsive" alt="">
                             </a>
                         </div>
+                        -->
+
+                        <div class="col-md-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura-detalhada.png" data-lightbox="example-set" data-title="Container Principal">
+                                <img src="img/estrutura/estrutura-detalhada.png" class="img-responsive" alt="Container Principal">
+                            </a>
+                        </div>
+
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Estrutura</h3>
                                 <p>O corpo da estrutura padrão das aplicações web está divido em 4 partes, sendo elas topo, barra de acessibilidade, menu de aplicação lateral e container para desenvolimento dos casos de uso. </p>
-                                <p>A "estrutura padrão" está preparada para se adaptar em diversas resoluções.</p>
+                                <p>A "estrutura padrão" está preparada para se adaptar em diversas resoluções. Deixamos claro que na construção deste Padrão de Interface cada elemento, cor, fonte e comportamento foram elaborados de forma a atender as necessidades do usuário final, por esse motivo, sugestões de alteração do mesmo devem ser aprovadas pela equipe responsável pela evolução do padrão.</p>
                             </div>
                         </div>
+
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento da Estrutura</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>A - Espaço destinado ao ícone de representação do sistema.</b>Elemento importante para identificação do sistema no Portal Goiás que deve ser definido junto ao gestor responsável pelo projeto.</li>
+                            <li><b>B - Espaço destinado ao nome do sistema.</b> Vale ressaltar que as características de fonte como tipo, cor e espessura não devem ser alteradas para atendimento ao padrão. Em cenários onde o nome do sistema venha ultrapassar o espaço destinado ao nome, um ajuste do tamanho da fonte poderá ser aplicado desde que homologado junto a equipe de testes.</li>
+                            <li><b>C - Espaço para marca da superintenência do sistema ou órgão responsável pelo sistema.</b> Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
+                            <li><b>D - Espaço para marca do órgão de maior hierarquia ao qual o sistema é subornidado.</b> Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
+                            <li><b>E - Espaço destinado a marca de representação do governo corrente.</b> Assim como as demais, é um elemento obrigatório e não deve ser alterado</li>
+                            <li><b>F - Label para indicação da operação da funcionalidade.</b></li>
+                            <li><b>G - O label de indicação de detalhe e agrupamento de elementos de formulário.</b> Tem como objetivo, apoiar na organização do forumlário, tornando mais claro e de fácil preencimento.</li>
+                            <li><b>H - Container para menu e ícones para identificação de acesso à funcionalidade.</b> Utilizar palavras curtas para representação da funcionalidade para melhor harmonia da coluna de ítens de menu.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-
             <section id="topo" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -316,16 +333,12 @@
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Topo</h3>
-                                <p>O Topo dos sistemas deverá sempre exibir o <b>logo</b> do sistema <b>ou ícone</b> que o represente, o <b>nome do sistema</b>, o <b>nome da secretaria gestora</b> do sistema e a marca do <b>Governo do Estado</b>.
-                                    Em alguns casos, pode exibir o nome da Subsecretaria responsável. Essas informações são importantes porque dão uma unidade visual a interface.
-                                    O topo é fixo em todas as telas, porém e não é necessário janelas de dialógo.
-                                </p>
+                                <p>Em resumo, esta é a visão do topo do layout do padrão de interface. Como detalhado no tópico anterior, estas são as únicas informações textuais e visuais que o topo dos sistemas aderentes a este padrão de interface deve conter exatamente com essas caracteristicas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="barra-de-ferramentas" class="section">
                 <div class="container">
                     <div class="row">
@@ -337,13 +350,14 @@
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Barra de Ferramentas</h3>
-                                <p>Descrição</p>
+                                <p>Assim como os demais componentes que compõem a 'estrutura' deste padrão interface, a barra de ferramentas é um recurso de grande importância para usuário e para a qualidade do sistema.
+                                   Dividida em três grupos de recursos, provê ferramentas de acessibilidade, botões para configuração, identificação de versão do sistema e função para encerrar a sessão do usuário.</p>
+                                <p>O detalhamento de cada recurso da barra de acessibilidade pode ser na sessão <a href="#usabilidade">Usabilidade</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="menu-laterais" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -362,12 +376,12 @@
                                 <p>Agrupe adequadamente todos os ítens de menu de acordo com sua função evite ao máximo criar subníveis.
                                     A nomenclatura do menu e do submenu deve ser bem clara para o que usuário possa identificar exatamente o que aquela função se propõe.
                                 </p>
+                                <p>Utilize no máximo 3 níveis de menu para facilitar o acesso do usuário ao recurso desejado.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="container-principal" class="section">
                 <div class="container">
                     <div class="row">
@@ -375,11 +389,13 @@
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/container-prinpcial.png" data-lightbox="example-set" data-title="Container Principal">
                                 <img src="img/estrutura/container-prinpcial.png" class="img-responsive" alt="Container Principal">
                             </a>
+                        <!--
                             <div class="col-md-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/container-prinpcial-source.png" data-lightbox="example-set" data-title="Container Principal">
                                     <img src="img/estrutura/container-prinpcial-source.png" class="img-responsive" alt="Container Principal">
                                 </a>
                             </div>
+                        -->
                         </div>
 
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -392,7 +408,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="padroes" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -407,70 +422,156 @@
                                 <h3 class="title-small">Padrões de UI</h3>
                                 <p>Uma maneira eficaz de se documentar soluções recorrentes e consolidadas para resolução de problemas comuns e recorrentes de interface de usuário.</p>
                                 <p>Se temos componentes com funções comuns em diferentes interfaces, esses elementos devem ser iguais (ou pelo menos o mais semelhante possível), tornando assim o processo de evolução da ui(correções ou melhoria), mais simples de ser executado.</p>
-                                <p>Seguem abaixo alguns dos nossos padrões de interface mais utilizados.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="crud-01" class="section">
+            <section id="inicial" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-01-formulario-e-lista.png" data-lightbox="example-set" data-title="Menu de aplicações">
-                                <img src="img/estrutura/crud-padrao-01-formulario-e-lista.png" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/padroes/inicial-descritiva.png" data-lightbox="example-set" data-title="Tela de Apresentação">
+                                <img src="img/padroes/inicial-descritiva.png" class="img-responsive" alt="Container Principal">
                             </a>
                         </div>
+
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Crud Padrão 01 - Form e Lista</h3>
-                                <p>Este é o <b>Crud Padrão 01</b>. O mesmo é formado por formulário e lista paginada em uma mesma página, possibilitando assim que usuário tenha uma interação mais rápida com o Crud.</p>
-                                <p>O Crud Padrão 01 é indicado nos casos onde seja possível disponibilizar todos os ítens de formulário e uma lista paginada em uma mesma página.</p>
+                                <h3 class="title-small">Tela de Apresentação</h3>
+                                <p>A tela de apresentação padrão do sistema deve ser utilizada como ponto de acesso inicial de todas aplicações.</p>
+                                <p>Informações como contato do responsável e ou suporte, nome e descrição do sistema são indispensáveis neste espaço.</p>
+                                <p>Este espaço também pode ser utilizado para exibição de informativos e orientações sobre do mantidas para o sistema.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="crud-02" class="section main-feature-gray">
+            <section id="layout-pesquisa-lista" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-02-lista.png" data-lightbox="example-set" data-title="Menu de aplicações">
-                                <img src="img/estrutura/crud-padrao-02-lista.png" class="img-responsive" alt="">
-                            </a>
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/formulario-detalhamento-colunas.png" data-lightbox="example-set" data-title="Layout de formulário"> <img src="img/estrutura/formulario-detalhamento-colunas.png" class="img-responsive" alt=""> </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Crud Padrão 02 - Lista</h3>
-                                <p>Este é o <b>Crud Padrão 02</b></p>
-                                <p>O Crud Padrão 02 é indicado para as telas onde a quantidade de ítens de formulários é muito grande, inviabilizando assim a construção do CRUD que contenha um formulário e uma lista paginda numa mesma tela sem que ela necessite de barra de rolagem lateral.</p>
+                                <h3 class="title-small">Layout de Formulário - Pesquisa</h3>
+                                <p>
+                                    Os elementos de formulário, neste exemplo "os filtros", devem estar dispostos em duas colunas dentro do container de formulário.
+                                    Isso proporcionará uma tela mais leve, com menos informações e de fácil interpretação para o usuário final. Esta disposição dos elementos de formulário também garante uma aplicação mais simplificada deste padrão de interface por ferramentas geradoras de códigos.
+                                </p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>A - Coluna para label de ítem de formulário.</b> Neste caso, os labels que precedem elementos de formulário devem sempre estar alinhados à direita. </li>
+                            <li><b>B - Coluna de elementos de formulário.</b> Este mesmo alinhamento se aplica aos elementos de formulários.</li>
+                            <li><b>C - Área para descanso dos olhos.</b> O espaço poderia estar preenchido por uma disposição em linha dos ítens de formulários, porém o padrão duas colunas foi escolhido por atender de forma mais simples e de rápida implementação grande parte dos cenários.</li>
+                            <li><b>D - Botão padrão para adição de novos ítens.</b> Este botão de operação deve estar sempre à direita superior do container, logo após a área de descanso, faciliantado assim que o usuário encontre de forma mais clara o acesso à essa operação.</li>
+                            <li><b>E - Botões padrão para aplicação dos filtros e limpeza.</b> Estes botões devem sempre estar alinhados à base dos itens do formulário de filtros de pesquisa.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-
-            <section id="crud-02.1" class="section">
+            <section id="crud-01-lista" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-02.1-form.png" data-lightbox="example-set" data-title="Formulário de aplicações">
-                                <img src="img/estrutura/crud-padrao-02.1-form.png" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-01-lista.png" data-lightbox="example-set" data-title="Menu de aplicações">
+                                <img src="img/estrutura/crud-padrao-01-lista.png" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Crud Padrão 02.1 - Form</h3>
+                                <h3 class="title-small">Crud Padrão 01 - Lista Paginada</h3>
+                                <p>Este é o <b>Crud Padrão 01</b>. Como primeira tela do fluxo do crud, basicamente é composto por uma lista paginada, campos de filtro para a lista paginada e um botão para acesso à tela de inclusão de dados, segunda tela do fluxo do crud padrão .</p>
+                                <p>O detalhe mais importante desta tela, é o fato da lista paginada não ser carregada no load da tela. Por padrão, todas as listas paginadas deverão ser carregadas somente após o preenchimento dos filtros. Esta decisão tem como objetivo, evitar consultas ou pesquisas não solicitadas pelo usuário. Isso garantirá uma melhor utilização dos recursos dispostos para aplicação.</p>
+                            </div>
+                        </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento da Estrutura</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li>
+                                <b>A - Filtros para lista.</b> Em primeiro lugar, orientamos que cada elemento de formulário ou componente a ser utilizado como filtro de pesquisa deve ser obtido da biblioteca de componentes do "framework corporativo" da tecnologia em questão .Net, Java ou PhP, lembrando que os nossos frameworks corporativos estão em constante evolução, e na ausência de algum componente específico o mesmo poderá ser solicitado junto à equipe de arquitetura.
+                                Por padrão, todos os filtros devem iniciar vazios, para que apenas sejam preenchidos pós iterações do usuário com a tela. Observação: Não alterar qualquer característica dos labels ou elementos de formulário como por exemplo fonte, cor, expessura, posicionamento e etc.
+                            </li>
+                            <li><b>B - Botão para filtragem.</b> Dispara a função de pesquisa considerando os filtros preenchidos. Na ausência de registros, uma única linha na lista paginada deve conter a mensagem "Nenhum registro encontrado" que informa o usuário sobre o resultado da pesquisa.</li>
+                            <li><b>C - Botão para limpeza de elementos de formulário.</b> Deve sempre estar a direita de todos os demais botões do formulário exatamente com a estilização demonstrada no print.</li>
+                            <li>
+                                <b>D - Lista paginada.</b>A lista paginada possui papel importante no Crud Padrão 01, pois através dela o usuário poderá encontrar suas informações cadastradas para manutenção das mesmas.
+                                A lista paginada não deve ser carregada no load na tela para evitar consultas desnecessárias ao servidor, o carregamento da lista paginada só deve ser feito após o disparo da ação filtrar pelo botão filtrar.
+                            </li>
+                            <li><b>E - Lista paginada: Títulos de Colunas.</b> Devem sempre estar alinhados à esquerda.</li>
+                            <li><b>F - Label instrução para agrupamento.</b> </li>
+                            <li><b>G - Controle de paginação padrão.</b> O controle de paginação das listas paginadas utilizados nos frameworks corporativos devem seguir este <b>padrão</b> independente do componente adotado, com as funções abaixo.</li>
+                            <li><b>G.1 - Acesso Rápido</b> por número de página</li>
+                            <li><b>G.2 - Configuração de Registros </b>a serem exibidos por página</li>
+                            <li><b>G.3 - Paginador</b> botões para avançar ou retornar uma página.</li>
+                            <li><b>H - Mensagem da lista paginada</b> no caso de não encontrar ítens para a pesquisa.</li>
+                            <li><b>I - Título da Funcionalidade</b> exemplificando o detalhamento do título abordado no tópico <b>Estrutura</b></li>
+                            <li><b>J - Label de identificação da operação</b> exemplificando o detalhamento do ítem <b>(F)</b> no tópico <b>Estrutura</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="crud-01-lista-preenchida" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-01.1-lista.png" data-lightbox="example-set" data-title="Lista Paginada Preenchida">
+                                <img src="img/estrutura/crud-padrao-01.1-lista.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Crud Padrão 01.1 - Lista Paginada Preenchida</h3>
+                                <p>Esta é uma implementação da lista paginada com os recursos e comportamentos mínimos esperados.</p>
+                                <p>Além do carregamento da lista somente após iteração do usuário com o botão filtrar*, deve se considerar que o carregamento dos itens da lista paginada não exceda 2 segundos.</p>
+                                <p>Todas listas paginadas que estejam sob o padrão de interface Goiás devem possuir todas essas característas apresentadas no print e na detalhamento.</p>
+                                <br />
+                            </div>
+                        </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>A - Lista paginada.</b> Carregada com os parâmetros de pesquisa.</li>
+                            <li><b>B - Cores de Linha.</b> Necessárias para análise dos dados por parte do usuário final.</li>
+                            <li><b>C - Coluna Ordenada.</b> Ao ordenar uma coluna, é necessário que a coluna em ordenação utilize este background para identificação da ordenação aplicada. Observando que o identificação de linha par e ímpar para zebragem deve permanecer mesmo que em tom mais escuro.</li>
+                            <li><b>C.1 - Botão para ação de Ordenação.</b>Ordena de forma ascendente ou descendente a coluna desejada além de também indicar quar ordação está aplicada. Em cenários onde a tela deva ser carregada com ordenação padrão o mesmo deve indicar tal ordenação padrão.</li>
+                            <li><b>D - Cor de Linha.</b> por hover. Indica qual linha receberá o clique do mouse durante o evento hover.</li>
+                            <li><b>E - Reticências.</b> Necessária e indispensável nos casos onde a lista paginada não suporta o redimensionamento de tela.</li>
+                            <li><b>F - Totalizador de registros encontrados.</b>Deve ser atualizado sempre que a ação filtrar for executada.</li>
+                            <li><b>G - Filtro informado.</b> Deve permanecer preenchido até que o mesmo venha ser limpo por ação do botão limpar, ou quando a tela for recarregada.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="crud-02" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-02-cadastro.png" data-lightbox="example-set" data-title="Formulário de aplicações">
+                                <img src="img/estrutura/crud-padrao-02-cadastro.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Crud Padrão 02.1 - Cadastro</h3>
                                 <p>Este é o <b>Crud Padrão 02.1</b></p>
                                 <p>Formulário para inclusão, alteração ou exclusão de registros.</p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>A - Coluna de labels.</b>Exemplificação prática da disposição dos labels em uma tela de crud.</li>
+                            <li><b>B - Coluna para elementos de formulário.</b> Exemplificação prática da disposição dos elementos de formulários em uma tela de crud.</li>
+                            <li><b>C - Indicativo de obrigatoriedade.</b> Se faz obrigatório a utilização deste elemento para todo campo de preenchimento obrigatório.</li>
+                            <li><b>D - Botão Salvar.</b> Botão de dispara a ação Salvar (incluir/alterar) do crud em questão. Este botão deve sempre ficar à esquerda do botão cancelar.</li>
+                            <li><b>E - Botão Cancelar</b>. Botão que retorna o fluxo da tela para a tela anterior, desconsiderando qualquer alteração não salva. Pode também ser entendido* como voltar para página anterior, porém o mesmo não desfaz nenhuma operação já persistida.</li>
+                            <li><b>F - Label indicativo de operação de tela.</b>Exemplificação prática.</li>
+                            <li><b>G - Título da Funcionalidade.</b> Exemplificação prática.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-
             <section id="fluxo-01" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -488,7 +589,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="fluxo-02" class="section">
                 <div class="container">
                     <div class="row">
@@ -506,7 +606,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="fluxo-02.1" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -524,7 +623,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="fluxo-02.2" class="section">
                 <div class="container">
                     <div class="row">
@@ -542,8 +640,6 @@
                     </div>
                 </div>
             </section>
-
-
             <section id="formularios" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -570,7 +666,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="controles" class="section">
                 <div class="container">
                     <div class="row">
@@ -588,8 +683,6 @@
                     </div>
                 </div>
             </section>
-
-
             <section id="listatens" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -631,7 +724,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="relatorios" class="section">
                 <div class="container">
                     <div class="row">
@@ -649,9 +741,56 @@
                     </div>
                 </div>
             </section>
+            <section id="" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/.png" data-lightbox="example-set" data-title="Responsividade"> <img src="img/" class="img-responsive" alt=""> </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">...</h3>
+                                <p>Texto...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/" data-lightbox="example-set" data-title=""><img src="img/" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">...</h3>
+                                <p>Texto...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="usabilidade" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/" data-lightbox="example-set" data-title=""><img src="img/" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Usabilidade</h3>
+                                <p>Texto...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-
-
+            <!--Ajuste de Fontes-->
+            <!--Ajuste de Contraste-->
+            <!--Ajuste de Relevo-->
+            <!--Ajuste de Cores-->
 
             <section id="copyright">
                 <div class="container">
@@ -666,7 +805,6 @@
                 </div>
             </section>
         </div>
-
 
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -719,10 +857,6 @@
                 $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
             });
         </script>
-
-
-
-
 
     </body>
 

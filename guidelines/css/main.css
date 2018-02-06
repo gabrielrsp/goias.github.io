@@ -202,7 +202,7 @@ a:focus {
 .menu-icon {
   background: transparent;
   border: none;
-  margin-right: 15px;
+  margin-right: 0;
 }
 .menu-icon i {
   font-size: 50px;

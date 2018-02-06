@@ -15,8 +15,11 @@
 
 .section { padding: 10px 0; }
 .feature-item p , .feature-item ul li{text-align: justify; }
-ul li{list-style: circle;}
-.container { margin-left: 17%; }
+ul li{list-style: none;}
+
+
+div.feature-item p a{ color:#4d7b96; font-weight: bold;}
+div.feature-item p a:hover{ color:#4d7b96;}
 
 
 
