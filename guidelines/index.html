@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
 
-        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
         <meta name="description" content="Responsive Bootstrap Landing Page Template">
         <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
@@ -27,18 +27,12 @@
         <link href="css/animate.min.css" rel="stylesheet">
 
         <!--<link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css">-->
-
         <link href="css/segplan-guidelines.css" rel="stylesheet">
-
     </head>
-
     <body>
-
         <div class="navbar navbar-invers menu-wrap" style="overflow-x: auto; overflow-y: auto;" >
 
-            <div class="navbar-header text-center">
-                <a class="navbar-brand logo-right" href="javascript:void(0)"><!--<i class="mdi-image-timelapse"></i>UI Goiás--> <img src="img/features/governo-estado-inovador-pas.png"></a>
-            </div>
+            <div class="navbar-header text-center"><a class="navbar-brand logo-right" href="javascript:void(0)"><!--<i class="mdi-image-timelapse"></i>UI Goiás--> <img src="img/features/governo-estado-inovador-pas.png"></a></div>
             <div class="text-center" style="text-align: left; margin-bottom: 40px;">
                 <a href="#ui-goias"
                    style="
@@ -48,7 +42,6 @@
                     margin-left: 18px;
                     color: #fff;"> UI Goiás Guideline<div class="ripple-wrapper"></div></a>
             </div>
-
 
             <ul class="nav navbar-nav main-navigation">
                 <!--<li class="active"><a href="#ui-goias">UI Goiás Guideline</a></li>-->
@@ -69,12 +62,15 @@
                 <li class="subnivel"><a href="#inicial">Tela de Apresentação</a>
 
                 <li class="subnivel"><a href="#layout-pesquisa-lista">Layout Filtros</a>
+
                 <li class="subnivel"><a href="#crud-01-lista">Crud 01 :: Lista Paginada</a>
                 <li class="subnivel"><a href="#crud-01-lista-preenchida">Crud 01.1 :: Lista Paginada Preenchida</a>
-                <li class="subnivel"><a href="#fluxo-01">Fluxo 01 - Form com Lista</a>
-                <li class="subnivel"><a href="#fluxo-02">Fluxo 02 - Lista para Form :: Adicionar</a>
-                <li class="subnivel"><a href="#fluxo-02.1">Fluxo 02.1 - Lista para Form :: Alterar</a>
-                <li class="subnivel"><a href="#fluxo-02.2">Fluxo 02.2 - Lista para Form :: Excluir</a>
+
+                <li class="subnivel"><a href="#fluxo-01-incluir">Fluxo 01 - Lista para Form :: Incluir</a>
+                <li class="subnivel"><a href="#fluxo-01-1-validar">Fluxo 01.1 - Form :: Validação</a>
+
+                <li class="subnivel"><a href="#fluxo-02-1">Fluxo 02.1 - Lista para Form :: Alterar</a>
+                <li class="subnivel"><a href="#fluxo-02-2">Fluxo 02.2 - Lista para Form :: Excluir</a>
 
                 <li class="subnivel"><a href="#formularios">Formulários</a></li>
                 <li class="subnivel"><a href="#controles">Controles</a></li>
@@ -122,9 +118,9 @@
                 <li class="subnivel"><a href="#fontes">Fontes</a></li>
                 <li class="subnivel"><a href="#icones">Ícones</a></li>
                 <li class="subnivel"><a href="#imagens">Imagens</a></li>
-               </ul>
+            </ul>
             <button class="close-button" id="close-button">Close Menu</button>
-        </div >
+        </div>
 
         <div class="content-wrap">
             <header class="hero-area" id="ui-goias">
@@ -200,11 +196,17 @@
                                 <p>Deve se conhecer o escopo, as limitações e os anseios do usuário desde o início do projeto, voltando os olhos não só para a robustez e a eficiência do sistema, mas também para as necessidades do usuário.</p>
                                 <p>Uma aplicação de design voltada para o usuário, utilizando avaliações de usabilidade durante todo o ciclo de desenvolvimento, resulta em vários benefícios, como:</p>
                                 <ul>
-                                    <li><b>Menores custos de desenvolvimento</b>: muitos erros de usabilidade são devidos a uma má concepção da mesma.</li>
-                                    <li><b>Redução do tempo de projeto</b>: a correção de erros em fases iniciais do projeto, diminui a necessidade de um retrabalho em relação ao desenvolvimento, o que acarreta uma diminuição no tempo do projeto.</li>
-                                    <li><b>Menores custos de manutenção e suporte</b>: um aplicativo fácil de aprender e usar resulta em redução de custos de aprendizagem e de suporte. Basicamente, uma aplicação satisfatória preenche os seguintes requisitos:</li>
-                                    <li><b>Simplicidade</b>: o usuário não quer perder tempo com uma interface complicada, que exija muitos passos para efetuar uma tarefa simples.</li>
-                                    <li><b>Clareza</b>: temos sempre que ter em mente o seguinte princípio: “o usuário não quer – aliás, não deve – pensar”. Isso que dizer que o usuário vai se irritar se tiver de decifrar uma interface que tenha ícones estranhos ou termos ambíguos nos menus e botões.</li>
+                                    <li><b>[Menores custos de desenvolvimento]</b> - Muitos erros de usabilidade são devidos a uma má concepção da mesma.</li>
+                                    <li><b>[Redução do tempo de projeto]</b> - A correção de erros em fases iniciais do projeto, diminui a necessidade de um retrabalho em relação ao desenvolvimento, o que acarreta uma diminuição no tempo do projeto.</li>
+                                    <li><b>[Menores custos de manutenção e suporte]</b> - Um aplicativo fácil de aprender e usar resulta em redução de custos de aprendizagem e de suporte. Basicamente, uma aplicação satisfatória preenche os seguintes requisitos:</li>
+                                    <li>
+                                        <ul style="margin:10px 0 0 2%; ">
+
+                                            <li><b>&bull;</b> Simplicidade - O usuário não quer perder tempo com uma interface complicada, que exija muitos passos para efetuar uma tarefa simples.</li>
+                                            <li><b>&bull;</b> Clareza - Temos sempre que ter em mente o seguinte princípio: “o usuário não quer – aliás, não deve – pensar”. Isso que dizer que o usuário vai se irritar se tiver de decifrar uma interface que tenha ícones estranhos ou termos ambíguos nos menus e botões.</li>
+                                        </ul>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -219,14 +221,14 @@
                                 <h3 class="title-small">Conceitos</h3>
                                 <p> Alguns elementos devem ser considerados no processo de produção de interfaces. Estes elementos são: usabilidade, consistência, navegabilidade, interatividade, clareza, flexibilidade, funcionalidade e legibilidade.</p>
                                 <ul>
-                                    <li><b>Usabilidade</b>, segundo a norma ISO 9241, é a capacidade que um sistema interativo oferece a seu usuário, em um determinado contexto de operação, para a realização de tarefas com qualidade e eficiência. Podemos considerar como uma propriedade que um aplicativo deve possuir para que os usuários possam utilizálo para realizar bem as tarefas que necessitam.</li>
-                                    <li><b>Consistência</b>, refere-se à coerência do uso dos itens de interface. Todos os elementos que possuem as mesmas funções devem apresentar as mesmas características gráficas e operacionais.</li>
-                                    <li><b>Navegabilidade</b> é capacidade que a interface do aplicativo possui de facilitar ao usuário chegar ao seu destino da maneira mais eficiente possível.</li>
-                                    <li><b>Interatividade</b> são um conjunto de operações ou atividades que o usuário põe em prática com os objetos de tal modo a alterar o ambiente.</li>
-                                    <li><b>Clareza</b> diz respeito à evidência de se encontrar os itens principais da interface, ou seja, eles devem ser claros o suficiente para que não haja dúvida sobre sua funcionalidade e seu uso. Se não são evidentes, devem ser autoexplicativos.</li>
-                                    <li><b>Flexibilidade</b> é a capacidade da interface de se adaptar as várias ações do usuário.</li>
-                                    <li><b>Funcionalidade</b> consiste nos elementos da interface cumprirem com eficiência o papel que lhes cabe. Deve-se combinar a clareza da função proposta com a eficiência na tarefa de realizar esta função.</li>
-                                    <li><b>Legibilidade</b> diz respeito às características lexicais das informações apresentadas na tela que possam dificultar ou facilitar a leitura dessa informação (brilho do caractere, contraste letra/fundo, tamanho da fonte, espaçamento entre palavras, espaçamento entre linhas, espaçamento de parágrafos, comprimento da linha, etc.).</li>
+                                    <li><b>[Usabilidade]</b> - Segundo a norma ISO 9241, é a capacidade que um sistema interativo oferece a seu usuário, em um determinado contexto de operação, para a realização de tarefas com qualidade e eficiência. Podemos considerar como uma propriedade que um aplicativo deve possuir para que os usuários possam utilizálo para realizar bem as tarefas que necessitam.</li>
+                                    <li><b>[Consistência]</b> - Refere-se à coerência do uso dos itens de interface. Todos os elementos que possuem as mesmas funções devem apresentar as mesmas características gráficas e operacionais.</li>
+                                    <li><b>[Navegabilidade]</b> - Écapacidade que a interface do aplicativo possui de facilitar ao usuário chegar ao seu destino da maneira mais eficiente possível.</li>
+                                    <li><b>[Interatividade]</b> - São um conjunto de operações ou atividades que o usuário põe em prática com os objetos de tal modo a alterar o ambiente.</li>
+                                    <li><b>[Clareza]</b> - Diz respeito à evidência de se encontrar os itens principais da interface, ou seja, eles devem ser claros o suficiente para que não haja dúvida sobre sua funcionalidade e seu uso. Se não são evidentes, devem ser autoexplicativos.</li>
+                                    <li><b>[Flexibilidade]</b> - É a capacidade da interface de se adaptar as várias ações do usuário.</li>
+                                    <li><b>[Funcionalidade]</b> - Consiste nos elementos da interface cumprirem com eficiência o papel que lhes cabe. Deve-se combinar a clareza da função proposta com a eficiência na tarefa de realizar esta função.</li>
+                                    <li><b>[Legibilidade]</b> - Diz respeito às características lexicais das informações apresentadas na tela que possam dificultar ou facilitar a leitura dessa informação (brilho do caractere, contraste letra/fundo, tamanho da fonte, espaçamento entre palavras, espaçamento entre linhas, espaçamento de parágrafos, comprimento da linha, etc.).</li>
                                 </ul>
                             </div>
                         </div>
@@ -310,14 +312,14 @@
 
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento da Estrutura</h5>
                         <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <li><b>A - Espaço destinado ao ícone de representação do sistema.</b>Elemento importante para identificação do sistema no Portal Goiás que deve ser definido junto ao gestor responsável pelo projeto.</li>
-                            <li><b>B - Espaço destinado ao nome do sistema.</b> Vale ressaltar que as características de fonte como tipo, cor e espessura não devem ser alteradas para atendimento ao padrão. Em cenários onde o nome do sistema venha ultrapassar o espaço destinado ao nome, um ajuste do tamanho da fonte poderá ser aplicado desde que homologado junto a equipe de testes.</li>
-                            <li><b>C - Espaço para marca da superintenência do sistema ou órgão responsável pelo sistema.</b> Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
-                            <li><b>D - Espaço para marca do órgão de maior hierarquia ao qual o sistema é subornidado.</b> Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
-                            <li><b>E - Espaço destinado a marca de representação do governo corrente.</b> Assim como as demais, é um elemento obrigatório e não deve ser alterado</li>
-                            <li><b>F - Label para indicação da operação da funcionalidade.</b></li>
-                            <li><b>G - O label de indicação de detalhe e agrupamento de elementos de formulário.</b> Tem como objetivo, apoiar na organização do forumlário, tornando mais claro e de fácil preencimento.</li>
-                            <li><b>H - Container para menu e ícones para identificação de acesso à funcionalidade.</b> Utilizar palavras curtas para representação da funcionalidade para melhor harmonia da coluna de ítens de menu.</li>
+                            <li><b>[A - Espaço destinado ao ícone de representação do sistema]</b> - Elemento importante para identificação do sistema no Portal Goiás que deve ser definido junto ao gestor responsável pelo projeto.</li>
+                            <li><b>[B - Espaço destinado ao nome do sistema]</b> - Vale ressaltar que as características de fonte como tipo, cor e espessura não devem ser alteradas para atendimento ao padrão. Em cenários onde o nome do sistema venha ultrapassar o espaço destinado ao nome, um ajuste do tamanho da fonte poderá ser aplicado desde que homologado junto a equipe de testes.</li>
+                            <li><b>[C - Espaço para marca da superintenência do sistema ou órgão responsável pelo sistema]</b> - Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
+                            <li><b>[D - Espaço para marca do órgão de maior hierarquia ao qual o sistema é subornidado]</b> - Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
+                            <li><b>[E - Espaço destinado a marca de representação do governo corrente]</b> - Assim como as demais, é um elemento obrigatório e não deve ser alterado</li>
+                            <li><b>[F - Label para indicação do tipo de tela da funcionalidade]</b></li>
+                            <li><b>[G - O label de indicação de detalhe e agrupamento de elementos de formulário]</b> - Tem como objetivo, apoiar na organização do forumlário, tornando mais claro e de fácil preencimento.</li>
+                            <li><b>[H - Container para menu e ícones para identificação de acesso à funcionalidade]</b> - Utilizar palavras curtas para representação da funcionalidade para melhor harmonia da coluna de ítens de menu.</li>
                         </ul>
                     </div>
                 </div>
@@ -464,11 +466,11 @@
                         </div>
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
                         <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <li><b>A - Coluna para label de ítem de formulário.</b> Neste caso, os labels que precedem elementos de formulário devem sempre estar alinhados à direita. </li>
-                            <li><b>B - Coluna de elementos de formulário.</b> Este mesmo alinhamento se aplica aos elementos de formulários.</li>
-                            <li><b>C - Área para descanso dos olhos.</b> O espaço poderia estar preenchido por uma disposição em linha dos ítens de formulários, porém o padrão duas colunas foi escolhido por atender de forma mais simples e de rápida implementação grande parte dos cenários.</li>
-                            <li><b>D - Botão padrão para adição de novos ítens.</b> Este botão de operação deve estar sempre à direita superior do container, logo após a área de descanso, faciliantado assim que o usuário encontre de forma mais clara o acesso à essa operação.</li>
-                            <li><b>E - Botões padrão para aplicação dos filtros e limpeza.</b> Estes botões devem sempre estar alinhados à base dos itens do formulário de filtros de pesquisa.</li>
+                            <li><b>[A - Coluna para label de ítem de formulário]</b> - Neste caso, os labels que precedem elementos de formulário devem sempre estar alinhados à direita. </li>
+                            <li><b>[B - Coluna de elementos de formulário]</b> - Este mesmo alinhamento se aplica aos elementos de formulários.</li>
+                            <li><b>[C - Área para descanso dos olhos]</b> - O espaço poderia estar preenchido por uma disposição em linha dos ítens de formulários, porém o padrão duas colunas foi escolhido por atender de forma mais simples e de rápida implementação grande parte dos cenários.</li>
+                            <li><b>[D - Botão padrão para adição de novos ítens]</b> - Este botão de operação deve estar sempre à direita superior do container, logo após a área de descanso, faciliantado assim que o usuário encontre de forma mais clara o acesso à essa operação.</li>
+                            <li><b>[E - Botões padrão para aplicação dos filtros e limpeza]</b> - Estes botões devem sempre estar alinhados à base dos itens do formulário de filtros de pesquisa.</li>
                         </ul>
                     </div>
                 </div>
@@ -491,24 +493,24 @@
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento da Estrutura</h5>
                         <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <li>
-                                <b>A - Filtros para lista.</b> Em primeiro lugar, orientamos que cada elemento de formulário ou componente a ser utilizado como filtro de pesquisa deve ser obtido da biblioteca de componentes do "framework corporativo" da tecnologia em questão .Net, Java ou PhP, lembrando que os nossos frameworks corporativos estão em constante evolução, e na ausência de algum componente específico o mesmo poderá ser solicitado junto à equipe de arquitetura.
+                                <b>A - Filtros para lista]</b> - Em primeiro lugar, orientamos que cada elemento de formulário ou componente a ser utilizado como filtro de pesquisa deve ser obtido da biblioteca de componentes do "framework corporativo" da tecnologia em questão .Net, Java ou PhP, lembrando que os nossos frameworks corporativos estão em constante evolução, e na ausência de algum componente específico o mesmo poderá ser solicitado junto à equipe de arquitetura.
                                 Por padrão, todos os filtros devem iniciar vazios, para que apenas sejam preenchidos pós iterações do usuário com a tela. Observação: Não alterar qualquer característica dos labels ou elementos de formulário como por exemplo fonte, cor, expessura, posicionamento e etc.
                             </li>
-                            <li><b>B - Botão para filtragem.</b> Dispara a função de pesquisa considerando os filtros preenchidos. Na ausência de registros, uma única linha na lista paginada deve conter a mensagem "Nenhum registro encontrado" que informa o usuário sobre o resultado da pesquisa.</li>
-                            <li><b>C - Botão para limpeza de elementos de formulário.</b> Deve sempre estar a direita de todos os demais botões do formulário exatamente com a estilização demonstrada no print.</li>
+                            <li><b>[B - Botão para filtragem]</b> - Dispara a função de pesquisa considerando os filtros preenchidos. Na ausência de registros, uma única linha na lista paginada deve conter a mensagem "Nenhum registro encontrado" que informa o usuário sobre o resultado da pesquisa.</li>
+                            <li><b>[C - Botão para limpeza de elementos de formulário]</b> - Deve sempre estar a direita de todos os demais botões do formulário exatamente com a estilização demonstrada no print.</li>
                             <li>
-                                <b>D - Lista paginada.</b>A lista paginada possui papel importante no Crud Padrão 01, pois através dela o usuário poderá encontrar suas informações cadastradas para manutenção das mesmas.
+                                <b>D - Lista paginada]</b> - A lista paginada possui papel importante no Crud Padrão 01, pois através dela o usuário poderá encontrar suas informações cadastradas para manutenção das mesmas.
                                 A lista paginada não deve ser carregada no load na tela para evitar consultas desnecessárias ao servidor, o carregamento da lista paginada só deve ser feito após o disparo da ação filtrar pelo botão filtrar.
                             </li>
-                            <li><b>E - Lista paginada: Títulos de Colunas.</b> Devem sempre estar alinhados à esquerda.</li>
-                            <li><b>F - Label instrução para agrupamento.</b> </li>
-                            <li><b>G - Controle de paginação padrão.</b> O controle de paginação das listas paginadas utilizados nos frameworks corporativos devem seguir este <b>padrão</b> independente do componente adotado, com as funções abaixo.</li>
-                            <li><b>G.1 - Acesso Rápido</b> por número de página</li>
-                            <li><b>G.2 - Configuração de Registros </b>a serem exibidos por página</li>
-                            <li><b>G.3 - Paginador</b> botões para avançar ou retornar uma página.</li>
-                            <li><b>H - Mensagem da lista paginada</b> no caso de não encontrar ítens para a pesquisa.</li>
-                            <li><b>I - Título da Funcionalidade</b> exemplificando o detalhamento do título abordado no tópico <b>Estrutura</b></li>
-                            <li><b>J - Label de identificação da operação</b> exemplificando o detalhamento do ítem <b>(F)</b> no tópico <b>Estrutura</b></li>
+                            <li><b>[E - Lista paginada: Títulos de Colunas]</b> - Devem sempre estar alinhados à esquerda.</li>
+                            <li><b>[F - Label instrução para agrupamento]</b> - Se trata de uma função específica agrupamento, abordada no tópico <a href="#componentes">"Componentes"</a> </li>
+                            <li><b>[G - Controle de paginação padrão]</b> - O controle de paginação das listas paginadas utilizados nos frameworks corporativos devem seguir este <b>padrão</b> independente do componente adotado, com as funções abaixo.</li>
+                            <li><b>[G.1 - Acesso Rápido]</b> - Por número de página</li>
+                            <li><b>[G.2 - Configuração de Registros]</b> - A serem exibidos por página</li>
+                            <li><b>[G.3 - Paginador]</b> - Botões para avançar ou retornar uma página.</li>
+                            <li><b>[H - Mensagem da lista paginada]</b> - No caso de não encontrar ítens para a pesquisa.</li>
+                            <li><b>[I - Título da Funcionalidade]</b> - Exemplificando o detalhamento do título abordado no tópico <b>Estrutura</b></li>
+                            <li><b>[J - Label de Identificação do Tipo de Tela]</b> - Exemplificando o detalhamento do ítem <b>(F)</b> no tópico <b>Estrutura</b></li>
                         </ul>
                     </div>
                 </div>
@@ -532,14 +534,14 @@
                         </div>
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
                         <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <li><b>A - Lista paginada.</b> Carregada com os parâmetros de pesquisa.</li>
-                            <li><b>B - Cores de Linha.</b> Necessárias para análise dos dados por parte do usuário final.</li>
-                            <li><b>C - Coluna Ordenada.</b> Ao ordenar uma coluna, é necessário que a coluna em ordenação utilize este background para identificação da ordenação aplicada. Observando que o identificação de linha par e ímpar para zebragem deve permanecer mesmo que em tom mais escuro.</li>
-                            <li><b>C.1 - Botão para ação de Ordenação.</b>Ordena de forma ascendente ou descendente a coluna desejada além de também indicar quar ordação está aplicada. Em cenários onde a tela deva ser carregada com ordenação padrão o mesmo deve indicar tal ordenação padrão.</li>
-                            <li><b>D - Cor de Linha.</b> por hover. Indica qual linha receberá o clique do mouse durante o evento hover.</li>
-                            <li><b>E - Reticências.</b> Necessária e indispensável nos casos onde a lista paginada não suporta o redimensionamento de tela.</li>
-                            <li><b>F - Totalizador de registros encontrados.</b>Deve ser atualizado sempre que a ação filtrar for executada.</li>
-                            <li><b>G - Filtro informado.</b> Deve permanecer preenchido até que o mesmo venha ser limpo por ação do botão limpar, ou quando a tela for recarregada.</li>
+                            <li><b>[A - Lista paginada]</b> Carregada com os parâmetros de pesquisa.</li>
+                            <li><b>[B - Cores de Linha]</b> Necessárias para análise dos dados por parte do usuário final.</li>
+                            <li><b>[C - Coluna Ordenada]</b> Ao ordenar uma coluna, é necessário que a coluna em ordenação utilize este background para identificação da ordenação aplicada. Observando que o identificação de linha par e ímpar para zebragem deve permanecer mesmo que em tom mais escuro.</li>
+                            <li><b>[C.1 - Botão para ação de Ordenação]</b>Ordena de forma ascendente ou descendente a coluna desejada além de também indicar quar ordação está aplicada. Em cenários onde a tela deva ser carregada com ordenação padrão o mesmo deve indicar tal ordenação padrão.</li>
+                            <li><b>[D - Cor de Linha]</b> por hover. Indica qual linha receberá o clique do mouse durante o evento hover.</li>
+                            <li><b>[E - Reticências]</b> Necessária e indispensável nos casos onde a lista paginada não suporta o redimensionamento de tela.</li>
+                            <li><b>[F - Totalizador de registros encontrados]</b>Deve ser atualizado sempre que a ação filtrar for executada.</li>
+                            <li><b>[G - Filtro informado]</b> Deve permanecer preenchido até que o mesmo venha ser limpo por ação do botão limpar, ou quando a tela for recarregada.</li>
                         </ul>
                     </div>
                 </div>
@@ -561,52 +563,71 @@
                         </div>
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
                         <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <li><b>A - Coluna de labels.</b>Exemplificação prática da disposição dos labels em uma tela de crud.</li>
-                            <li><b>B - Coluna para elementos de formulário.</b> Exemplificação prática da disposição dos elementos de formulários em uma tela de crud.</li>
-                            <li><b>C - Indicativo de obrigatoriedade.</b> Se faz obrigatório a utilização deste elemento para todo campo de preenchimento obrigatório.</li>
-                            <li><b>D - Botão Salvar.</b> Botão de dispara a ação Salvar (incluir/alterar) do crud em questão. Este botão deve sempre ficar à esquerda do botão cancelar.</li>
-                            <li><b>E - Botão Cancelar</b>. Botão que retorna o fluxo da tela para a tela anterior, desconsiderando qualquer alteração não salva. Pode também ser entendido* como voltar para página anterior, porém o mesmo não desfaz nenhuma operação já persistida.</li>
-                            <li><b>F - Label indicativo de operação de tela.</b>Exemplificação prática.</li>
-                            <li><b>G - Título da Funcionalidade.</b> Exemplificação prática.</li>
+                            <li><b>[A - Coluna de labels]</b>Exemplificação prática da disposição dos labels em uma tela de crud.</li>
+                            <li><b>[B - Coluna para elementos de formulário]</b> Exemplificação prática da disposição dos elementos de formulários em uma tela de crud.</li>
+                            <li><b>[C - Indicativo de obrigatoriedade]</b> Se faz obrigatório a utilização deste elemento para todo campo de preenchimento obrigatório.</li>
+                            <li><b>[D - Botão Salvar]</b> Botão de dispara a ação Salvar (incluir/alterar) do crud em questão. Este botão deve sempre ficar à esquerda do botão cancelar.</li>
+                            <li><b>[E - Botão Cancelar</b>. Botão que retorna o fluxo da tela para a tela anterior, desconsiderando qualquer alteração não salva. Pode também ser entendido* como voltar para página anterior, porém o mesmo não desfaz nenhuma operação já persistida.</li>
+                            <li><b>[F - Label indicativo do tipo de tela da funcionalidade]</b>Exemplificação prática.</li>
+                            <li><b>[G - Título da Funcionalidade]</b> Exemplificação prática.</li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section id="fluxo-01" class="section main-feature-gray">
+            <section id="fluxo-01-incluir" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/fluxo-01-form-c-lista.png" data-lightbox="example-set" data-title="Fluxo 01 - Form c Lista - Incluir">
-                                <img src="img/estrutura/fluxo-01-form-c-lista.png" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/fluxo-01-lista-p-form-sucesso.png" data-lightbox="example-set" data-title="Fluxo 01 - Lista para Form - Incluir">
+                                <img src="img/estrutura/fluxo-01-lista-p-form-sucesso.png" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Fluxo 01 - Form c Lista :: Incluir</h3>
+                                <h3 class="title-small">Fluxo 01 - Lista para Form :: Incluir</h3>
                                 <p>Este fluxo exemplifica a inclusão de um novo registro no Crud Padrão 01.</p>
+                                <p>Este fluxo padrão deve ser adotado em todos os cruds básicos da aplicação. O mesmo é divido basicamente em duas telas, sendo a primeira o
+                                    <a href="#crud-01-lista">"Crud Padrão 01"</a> e a segunda pelo <a href="#crud-02">"Crud Padrão 02"</a>. O fluxo é dividido em duas fases para simplificação do desenvolvimento bem como execução de testes e entregas de demandas.</p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[A - Novo Item]</b> - Neste fluxo e nesta tela de crud, tem a única função de encaminhar o usuário para a tela de entrada de dados.</li>
+                            <li><b>[B - Campos de Formulário]</b> - Elementos de formulários para entrada de dados pelo usuário. Comportamentos e funções de cada componente corporativo de formulário exemplo input text, select, textarea e etc são detalhados na sessão  <a href="#componentes">"Componentes"</a>.</li>
+                            <li><b>[C - Salvar]</b> - Botão para enviar os dados ao back-end para validação e persistência dos dados. Todas as mensagens de negócio retornadas devem ser apresentadas nesta mesma página.</li>
+                            <li><b>[D - Mensagem Sucesso]</b> - Mensagem de sucesso retornada pela operação de "inclusão" de dados. Toda operação disparada pelo usuário através dos botões de controle do formulário, devem retornar uma mensagem sobre o resultado da mesma, seja sucesso ou não. Para informações e detalhamento do padrão de mensagens, consulte o tópico <a href="#componentes">"Validações de Regras"</a>.</li>
+                            <li><b>[E - Atualização de Tela]</b> - Ao realizar a "operação" com sucesso, a aplicação deve retornar a tela a qual o usuário iniciou sua solicitação de inclusão de dados. E esta tela deve estar em seu estado inicial, sem a seleção qualquer filtros ou dado carregado na lista paginada inicial.</li>
+                            <li><b>[F - Evidenciação de Operação Realizada]</b> - Caso o usuário necessite verificar a informação incluída, o mesmo precisará efetuar uma pesquisa ou consulta informando os dados desejados. Desta forma, mantemos a política de somente oferecer ao usuário, informações que o mesmo solicitou.</li>
+                        </ul>
+
                     </div>
                 </div>
             </section>
-            <section id="fluxo-02" class="section">
+            <section id="fluxo-01-1-validar" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/fluxo-02-lista-p-form.png" data-lightbox="example-set" data-title="Formulário de aplicações">
-                                <img src="img/estrutura/fluxo-02-lista-p-form.png" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/fluxo-01-lista-p-form-validacao.png" data-lightbox="example-set" data-title="Formulário de aplicações:: Validação">
+                                <img src="img/estrutura/fluxo-01-lista-p-form-validacao.png" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Fluxo 02 - Lista para Form:: Incluir</h3>
-                                <p>Este fluxo exemplifica a inclusão de um novo registro utilizando-se o Crud Padrão 02.</p>
+                                <h3 class="title-small">Fluxo 01.1 - Lista para Form:: Incluir :: Validar</h3>
+                                <p>Este fluxo exemplifica o comportamento e tratamento de tela de crud após tentativa de inclusão de novo registro sem que os campos obrigatórios sejam informados.</p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[A - Salvar]</b> - Neste caso, se trata de uma operção de inclusão.</li>
+                            <li><b>[B - Obrigatoriedade]</b> - Informa os campos obrigatórios para o crud.</li>
+                            <li><b>[C - Mensagem de Erro]</b> - Neste caso, se trata de uma mensagem padrão que informa ao usuário a existência de inconsistências que <b>impedem</b> que sua operação tenha prosseguimento.</li>
+                            <li><b>[D - Mensagem de Erro por Elemento]</b> - Todo campo obrigatório, necessariamente deve receber sua mensagem de erro específica, podendo ser uma obrigatoriedade de campo, campo informado incorretamente ou condição de preenchimento.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-            <section id="fluxo-02.1" class="section main-feature-gray">
+            <section id="fluxo-02-1" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -617,13 +638,31 @@
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Fluxo 02.1 - Lista para Form:: Editar</h3>
-                                <p>Este fluxo exemplifica a alteração de um registro utilizando-se o Crud Padrão 02.</p>
+                                <p>Este fluxo padrão 02, define comportamento e tratamento de tela para alteração de dados por meio do mesmo formulário utilizado no fluxo 01 para entrada de novos dados.</p>
+                                <p>O fluxo se resume em:</p>
+                                <p>- O usuário seleciona a funcionlidade desejada através o menu da aplicação e recebe o <a href="crud-01-lista">Crud Padrão 01</a> para inicar este fluxo que detalhamos abaixo.</p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[A - Filtro]</b> - Neste caso, apenas um filtro para pesquisa, isso permite uma perquisa mais acertiva. Porém, caso o usuário não informe nenhum item, o sistema dele lhe entregar a primeira página da listagem dos dados da funcionalidade em questão.</li>
+                            <li><b>[B - Filtrar]</b> - Dispara a pesquisa com o filtro informado.</li>
+                            <li><b>[C - Resultado]</b> - Caso encontre algum resultado para a pesquisa solicitada, a lista paginada é atualizada com os itens encontrados.</li>
+                            <li>
+                                <b>[D - Foco em Linha da Tabela]</b> - Todas os itens de listas devem possuir este background aplicado pelo hover do mouse. Isso facilita a análise dos dados por parte do usuário final para que o mesmo possa selecionar o elemento da lista paginada de forma mais clara.
+                                Neste caso, o <b>clique</b> na linha iluminada encaminhará o usuário para tela de inclusão de dados, que neste caso terá as funções de alteração ou exclusão disponíveis dependendo do nível de acesso que o usuário possuir.
+                            </li>
+                            <li><b>[E - Entrada de Dados]</b> - Neste caso, exemplificamos a atualização do dado para que o mesmo seja enviado para persistência.</li>
+                            <li><b>[F - Botão Salvar]</b> - Neste caso terá função de enviar os dados para que a aplicação aplique as alterações efetuadas pelo usuário final no registro consultado.</li>
+                            <li><b>[G - Mensagem Retornada ao Usuário]</b> - Em caso de sucesso, a mensagem deve informar ao usuário sobre o sucesso na <b>alteração/atualização</b> dos dados informados.</li>
+                            <li><b>[H - Label Indicativo de Operação]</b> - Como detalhado no tópico <a href="#estrutura">Estrutura</a> o label deve informar o usuário sobre </li>
+                            <li><b>[I - Tipo de Tela/View]</b> - Alterado de acordo com os padrões definidos no tópico <a href="#estrutura">Estrutura</a>.</li>
+
+                        </ul>
                     </div>
                 </div>
             </section>
-            <section id="fluxo-02.2" class="section">
+            <section id="fluxo-02-2" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -637,18 +676,33 @@
                                 <p>Este fluxo exemplifica a exclusão de um registro utilizando-se o Crud Padrão 02.</p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[ A - Filtro para Pesquisa]</b> - Usuário informa o filtro de pesquisa para obter o registro para exclusão. Neste ponto, vale lembrar que usuário pode a qualquer momento disparar a pesquisa da lista paginda sem informar os filtros, assim ele obterá a primeira página da lista de registros e dessa forma poderá navegar na lista paginada até encontrar o resultado esperado.</li>
+                            <li><b>[ B - Botão para Filtragem]</b> - Obtém a primeira página da lista paginda com base nos filtros, ou a primeira página da listagem sem filtros caso não sejam informados.</li>
+                            <li><b>[ C - Resultado]</b> - Registro(s) encontrado(s).</li>
+                            <li><b>[ D - Foco em Linha para Exclusão]</b> - Iluminação de linha para apoiar a seleção acertiva do ítem para exclusão.</li>
+                            <li><b>[ E - Preenchimento de Campos]</b> - Os campos devem ser preenchidos para que o usuário tenha certeza de que os dados a serem excluídos estejam de acordo com sua intenção.</li>
+                            <li><b>[ F - Botão para Excluir]</b> - Este botão somente deve ser visível ao usuário somente quando as informações preenchidas no formulário se tratarem de informações já persistidas pela aplição, o que não acontece no detalhamento do <a href="crud-02">Crud Padrão 02.1</a>.</li>
+                            <li><b>[ G - Modal de Confirmação]</b> - O modal de confirmação funciona como uma estratégia de "segurança" a fim de se ter uma garantia "mínima" da inteção de exclusão do registro por parte do usuário, evitando assim um prejuízo ao usuário por uma ação ocasionada por um engano. O mesmo também pode ser utilizado antes de qualquer outro tipo operação que se queira avisar o usuário sobre a indisponibilidade de reverter a ação.</li>
+                            <li><b>[ H - Mensaegm de Confirmação]</b> - Neste caso a mensagem "padrão" para solicitar a confirmação da intenção do usuário em excluir o registro.</li>
+                            <li><b>[ I - Botão para Confirmar Exclusão*]</b> - Este é o botão padrão para efetivar a exclusão.</li>
+                            <li><b>[ J - Botão para Cancelar a Intenção de Operação]</b> - Neste caso, este botão funciona como recurso para que o usuário tenha opção de desistir de efetuar a operação. Além de cancelar a inteção de exclusão do registro, também tem função de fechar o modal e habilitar a tela sobreposta pelo modal. </li>
+                            <li><b>[ J.1 - Botão para Cancelar a Intenção de Operação]</b> - Tem a mesma função do item (J), além de cancelar a inteção de exclusão do registro, também tem função de fechar o modal e habilitar a tela sobreposta pelo modal.</li>
+                            <li><b>[ K - Background de Bloqueio]</b> - O background de bloqueio de tela para obtenção de confirmação de operação.</li>
+                            <li><b>[ L - Mensagem Retornada ao Usuário]</b> - Em caso de sucesso, a mensagem deve informar ao usuário sobre o sucesso na <b>exclusão</b> do registro selecionado.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
+
             <section id="formularios" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <!--
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-01-formulario-e-lista.png" data-lightbox="example-set" data-title="Menu de aplicações">
+                            <!--<a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-01-formulario-e-lista.png" data-lightbox="example-set" data-title="Menu de aplicações">
                                 <img src="img/estrutura/crud-padrao-01-formulario-e-lista.png" class="img-responsive" alt="">
-                            </a>
-                            -->
+                            </a>-->
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
@@ -741,6 +795,8 @@
                     </div>
                 </div>
             </section>
+
+            <!--
             <section id="" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -786,12 +842,12 @@
                     </div>
                 </div>
             </section>
+            -->
 
             <!--Ajuste de Fontes-->
             <!--Ajuste de Contraste-->
             <!--Ajuste de Relevo-->
             <!--Ajuste de Cores-->
-
             <section id="copyright">
                 <div class="container">
                     <div class="row">
@@ -816,11 +872,9 @@
         <script src="js/jquery.inview.min.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/jquery.nav.js"></script>
-        <script src="js/smooth-on-scroll.js"></script>
+        <!--<script src="js/smooth-on-scroll.js"></script>-->
         <script src="js/smooth-scroll.js"></script>
         <script src="js/main.js"></script>
-
-        <!--<script src="js/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>-->
 
         <!-- Add fancyBox main JS and CSS files -->
         <script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.js?v=2.1.5"></script>
@@ -830,14 +884,10 @@
         <link rel="stylesheet" type="text/css" href="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
         <script type="text/javascript" src="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
-        <!-- jquery.highlight.js -->
-        <script type="text/javascript" src="js/highlight/jquery.highlight.js"></script>
-
         <script>
             $(document).ready(function () {
                 // This command is used to initialize some elements and make them work properly
                 $.material.init();
-
                 $('.fancybox-thumbs').fancybox({
                     prevEffect : 'none',
                     nextEffect : 'none',
@@ -854,10 +904,7 @@
                     }
                 });
 
-                $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
             });
         </script>
-
     </body>
-
 </html>
