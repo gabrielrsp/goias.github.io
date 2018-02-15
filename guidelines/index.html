@@ -700,23 +700,36 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <!--<a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/crud-padrao-01-formulario-e-lista.png" data-lightbox="example-set" data-title="Menu de aplicações">
-                                <img src="img/estrutura/crud-padrao-01-formulario-e-lista.png" class="img-responsive" alt="">
-                            </a>-->
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/form-agrupado.png" data-lightbox="example-set" data-title="Formulário com campos agrupados por afinidade.">
+                                <img src="img/estrutura/form-agrupado.png" class="img-responsive" alt="">
+                            </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Formulários</h3>
                                 <p>Quando se trata da formatação de formulários, é importante ter em mente algumas considerações.</p>
-                                <ul>
-                                    <li>Não mude a forma básica dos elementos. Quando o usuário se depara com um formulário com um formato muito diferente do acostumado, ele pode se sentir constrangido e simplesmente abandonar o preechimento.</li>
-                                    <li>Utilize rótulos (labels) claros e curtos. Tente ser conciso na nomenclatura dos campos.</li>
-                                    <li>Campos maiores, respostas maiores. Procure deixar o tamanho dos campos proporcional ao tamanho da informação que o sistema espera receber. Se um campo exige uma informação curta, use campos curtos. Por exemplo, não coloque um campo senha com tamanho de 300px se espera receber apenas 6 caracteres. O usuário certamente vai pensar que não entendeu bem a finalidade do campo.</li>
-                                    <li>Sinais de identificação. É interessante usarmos * para um campo obrigatório. O usuário está acostumado com esse sinal. Iremos utilizálo antes do campo do formulário, a direita do rótulo. É preciso que o usuário saiba que aquele campo é obrigatório antes de ler o campo.</li>
-                                    <li>Agrupe. Procure agrupar informações semelhantes e complementares.</li>
-                                </ul>
+
+                                    <p>Não mude a forma básica dos elementos. Quando o usuário se depara com um formulário com um formato muito diferente do acostumado, ele pode sentir dificultade no preenchimento
+                                        fazendo com que o mesmo sinta-se constrangido fato esse que pode ser o gatilho para situações não favoráveis como por exemplo o usuário abandonar o preenchimento do formulário.</p>
+                                    <p>Utilize rótulos (labels) claros e curtos. Tente ser conciso na nomenclatura dos campos.</p>
                             </div>
                         </div>
+                        <p>Campos maiores, respostas maiores. Procure deixar o tamanho dos campos proporcional ao tamanho da informação que o sistema espera receber.
+                            Se um campo exige uma informação curta, use campos curtos. Por exemplo, não coloque um campo senha com tamanho de 300px se espera receber apenas 6 caracteres.
+                            O usuário certamente vai pensar que não entendeu bem a finalidade do campo.</p>
+                        <p>Sinais de identificação. É obrigatório usarmos * para um campo obrigatório. O usuário está acostumado com esse sinal por se uma estratégia amplamente utilizada no mercado.
+                            Iremos utilizálo antes do campo do formulário, a direita do rótulo.
+                            É preciso que o usuário saiba que aquele campo é obrigatório antes de ler o campo.</p>
+                        <p>Agrupe. Procure agrupar informações semelhantes e complementares.</p>
+
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[ A - Agrupamento]</b> - O agrupamento de informações se faz obrigatório em telas de cruds complexos, além de se tratar de um recurso para organização da informação, também tem função de mostrar ao usuário a interdependência das informações entre os cruds simplificados.</li>
+                            <li><b>[ B - Campos com tamanho adequado]</b> - Um erro bastante comum e de grande impacto nas aplicações que deve ser evitado. Se trata de uma implementação de baixíssima complexidade e que garante um layout mais limpo ao usuário final. Como descrito acima, o tamanho dos campos na tela não devem ser maiores ou menores que o necessário.</li>
+                            <li><b>[ C - Campos somente leitura]</b> - Campos somente leitura tem a finalidade de facilitar a leitura do usuário com o foco no valor que o mesmo está interessado em consultar. Como já é de conhecimento, também é recurso para impedir que o usuário insira ou altere um dado específico que o mesmo não deva por limitação de acesso.</li>
+                            <li><b>[ D - Colunas do formulário]</b> - Cruds complexos que exijam maior quantidade de itens na tela podem utilizar de mais de duas coluns na tela, desde que mantenha-se a simetria e harmonia do layout como no exemplo dado.</li>
+                            <li><b>[ E - Ações do adicionais]</b> - Ações adicionais para consulta, pesquisa e adição de dados na tela podem ser utilizadas desde que não persistam ou excluam dados sem a iteração do usuário com os controles padrões. A fim de manter um padrão não somente do layout da interface devemos utilizar somente componentes adicionais homologados tratados no tópico <a href="#componentes">Componentes</a></li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -724,9 +737,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <!--
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/controles-crud.png" data-lightbox="example-set" data-title="Controles Básicos">
                                 <img src="img/estrutura/controles-crud.png" class="img-responsive" alt="">
                             </a>
+                            -->
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
@@ -741,9 +756,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <!--
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem.png" class="img-responsive" alt="">
                             </a>
+                            -->
                         </div>
 
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -756,24 +773,32 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <!--
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-goDatatable.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem-goDatatable.png" alt="" width="100%">
                             </a>
+                            -->
                         </div>
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+                            <!--
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-controller.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem-controller.png" alt="" width="100%">
                             </a>
+                            -->
                         </div>
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
+                            <!--
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-service.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem-service.png" alt="" width="100%">
                             </a>
+                            -->
                         </div>
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <!--
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-entity.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem-entity.png" alt="" width="100%">
                             </a>
+                            -->
                         </div>
                     </div>
                 </div>
