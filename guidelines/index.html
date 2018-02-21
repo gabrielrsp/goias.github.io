@@ -83,6 +83,8 @@
                 <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
                 <li class="subnivel"><a href="#pesquisas">Pesquisas</a></li>
                 <li class="subnivel"><a href="#recarregar">Recarregar</a></li>
+                <li class="subnivel"><a href="#impressao">Impressão</a></li>
+
 
                 <li>                 <a href="#componentes">Componentes</a></li>
                 <li class="subnivel"><a href="#botoes-navegacao">Botões de Navegação</a></li>
@@ -695,7 +697,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="formularios" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
@@ -746,9 +747,32 @@
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Controles Básicos</h3>
-                                <p>Estes são os controles básicos, que devem ser utilizados de acordo com a imagem do padrão (ordem, cores e funções) .</p>
+                                <p>
+                                    Neste tópico abordamos a utilização e padronização de botões para o controle de possíveis ações do usuário.
+                                    O controle das principais operações disponíveis para os crud's padrões se resumem basicamente nos botões representados na imagem ao lado.
+                                    Posicionamento bem como a afase do crud onde os mesmos devem ser utilizados já foram tratados nos tópicos em que abordamos o detalhamento de cada crud padrão, restando a esse tópico o detalhamento das caracteristicas particulaes de cada botão.
+                                </p>
+                                <p> Antes de iniciarmos o detalhamento dos botões deste padrão de interface, devemos seguir como premissa básica que todos os botões abaixo detalhados só devem estar disponíveis ao usuário caso o mesmo tenha permissão para executar a operação a qual o botão se propõe. Permissões de acesso e operações são mantidas no Portal de Intra Goiás. <br /><br /><br /><br /><br /></p>
                             </div>
                         </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[ A - Novo Item]</b> - Este botão tem como função redirecionar o usuário para a tela de crud para inclusão de novos dados por parte do usuário, como detalhado no tópico <a href="#crud-01-lista">Crud 01 :: Lista Paginada</a> . Neste padrão de interface, este botão não deve persistir dados.</li>
+                            <li><b>[ B - Filtrar]</b> - Este botão tem função disparar a consulta/pesquisa em questão para a aplicação com os campos tipo filtro informados, e, ao retorno preecher a lista paginada com o resultado obtido. Exemplos práticos de utilização deste botão podem ser encontrados em telas ou parte de telas que utilizem de listas simples ou paginadas, como por exemplo a primeira tela do Crud 01 e lista paginadas em modais.</li>
+                            <li><b>[ C - Salvar / Novo]</b> - Neste padrão de interface este botão tem como função básica, enviar os dados informados para que a aplicação possa persistí-los, podendo essa persistência se tratar de uma inclusão ou alteração de dados. Isso deve ser transparente ao usuário, porém ao fim do processo de inclusão de novos dados, a aplicação deve informar ao usuário o resultado da operação utilizando a mensagem padrão adequada para a operação.</li>
+                            <li><b>[ D - Salvar / Alterar]</b> - Neste caso, o botão terá a função de enviar os dados alterados* para a aplicação para que os mesmos possam ser alterados. Como utilizamos um mesmo botão para duas ações diferentes incluir/alterar, o controle de qual operação o botão deve disparar deve ser controlado pela aplicação.</li>
+                            <li><b>[ E - Imprimir]</b> - Neste padrão de interface o botão imprimir se trata apenas de um atalho para função de impressão do browser (Ctrl+P), e neste caso a aplicação deve ser responsável pela tratamento adequado dos dados a serem exibidos no formato de imperssão com base no estilo/padrão de interface para impressão no tópico <a href="#impressao">Estilização para Impressão</a>.</li>
+                            <li><b>[ F - Exportar XLS/Filtra]</b> - Este botão tem como função <b>filtrar</b> e <b>exportar</b> dados em formato xls. A cor do botão faz referência ao botão filtrar utilizado no crud 01 para indicarmos ao usuário que a exibição dos dados para posterior exportação é inviável em cenários onde há um alto custo na obteção dos dados, sendo que o melhor "neste cenário" é a geração e exportação em uma única ação. Este padrão também é justificado onde há exigência de um formato e estilização oficial para o relatório. </li>
+                            <li><b>[ G - Exportar PDF/Filtra]</b> - Este botão tem como função <b>filtrar</b> e <b>exportar</b> dados em formato pdf e sua utilização é justificada pelo mesmo motivo do item anterior.</li>
+                            <li><b>[ H - Recarregar]</b> - Tem como função, recarregar os resultados previamente carregados em telas onde se faça a utilização de load de resultados no load da tela.</li>
+                            <li><b>[ I - Adicionar]</b> - Este botão tem como função, a adição de itens de sub-formulários em cruds que contenham lista de ítens em seu crud de entrada de dados. Observação: Mesmo neste caso a persistência fica sob responsabilidade do botão salvar.</li>
+                            <li><b>[ J - Remover]</b> - Tem como função apenas remover na tela itens de listas internas em formulários ou estruturas de sub-formulários, preparando assim a tela para que os dados solicitados sejam efetivamente removidos pelo botão Salvar, que nestes casos excluirá logicamente os sub itens de entidades relacionadas e suas referências onde se faça necessário.</li>
+                            <li><b>[ K - Operação Personalizada]</b> - A cor e o ícone deste botão indica que o mesmo dispara uma operação personalizada que persistirá dados na aplicação. Operações como esta não devem fazer parte de cruds básicos, as mesmas devem estar restritas à telas que trabalhem o negócio em si da aplicação. Para exemplificarmos sua utilização utilizamos este <b>exemplo</b> do projeto Novo Siplam > Configurações > Atualizar Exercícios dos Programas > Atualizar Programas, onde verificando pelo caminho do menu que não se trata de uma tela de crud básico.</li>
+                            <li><b>[ L - Limpar]</b> - Uma função simples mas de grande valia para a interface, tem como objetivo limpar os campos para que o usuário informe novos filtros para pesquisa. Não deve recarregar ou limpar a lista de resultados obtida anteriormente.</b> </li>
+                            <li><b>[ M - Exportar PDF/Filtrada]</b> - Este botão tem como função exportar uma listagem paginada/filtrada em formato xls.</li>
+                            <li><b>[ N - Excluir]</b> - O botão excluir é o primeiro ponto de iteração do usuário para que ele possa excluir uma informação na aplicação. Ao clicar neste botão a aplicação deve sempre* exibir o modal de confirmação de solicitação de exclusão, somente após essa confirmação a operação poderá ser persistida na aplicação.</li>
+                            <li><b>[ O - Cancelar]</b> - Tem a única função de voltar o usuário para a tela inicial do crud. Este botão não deve desfazer nenhuma operação já persistida no banco de dados, como também não deve manter qualquer campo preenchido para inclusão ou operação posterior. </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -828,6 +852,54 @@
                             </a>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            <section id="impressao" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <!--<a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-multipla-selecao.png" data-lightbox="example-set" data-title="Listagens">
+                                <img src="img/estrutura/datatables-multipla-selecao.png" class="img-responsive" alt="">
+                            </a>-->
+                        </div>
+
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Estilização para Imperssão</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <!--<a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-agrupamento.png" data-lightbox="example-set" data-title="Listagens">
+                                <img src="img/estrutura/datatables-agrupamento.png" alt="" width="100%">
+                            </a>-->
+
+                        </div>
+                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+                            <!--
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-controller.png" data-lightbox="example-set" data-title="Listagens">
+                                <img src="img/estrutura/listagem-controller.png" alt="" width="100%">
+                            </a>
+                            -->
+                        </div>
+                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
+                            <!--
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-service.png" data-lightbox="example-set" data-title="Listagens">
+                                <img src="img/estrutura/listagem-service.png" alt="" width="100%">
+                            </a>
+                            -->
+                        </div>
+                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
+                            <!--
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-entity.png" data-lightbox="example-set" data-title="Listagens">
+                                <img src="img/estrutura/listagem-entity.png" alt="" width="100%">
+                            </a>
+                            -->
+                        </div>
                     </div>
                 </div>
             </section>
