@@ -71,6 +71,7 @@
 
                 <li class="subnivel"><a href="#fluxo-02-1">Fluxo 02.1 - Lista para Form :: Alterar</a>
                 <li class="subnivel"><a href="#fluxo-02-2">Fluxo 02.2 - Lista para Form :: Excluir</a>
+                <li class="subnivel"><a href="#fluxo-03-1">Fluxo 03.1 - Lista para Processamento em Lote:: Processar</a>
 
                 <li class="subnivel"><a href="#formularios">Formulários</a></li>
                 <li class="subnivel"><a href="#controles">Controles</a></li>
@@ -697,7 +698,34 @@
                     </div>
                 </div>
             </section>
-            <section id="formularios" class="section main-feature-gray">
+            <section id="fluxo-03-1" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/fluxo-03-lista-p-processamento-lote.png" data-lightbox="example-set" data-title="Fluxo 03.1 - Lista para Processamento em Lote:: Processar">
+                                <img src="img/estrutura/fluxo-03-lista-p-processamento-lote.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Fluxo 03.1 - Lista para Processamento em Lote:: Processar</h3>
+                                <p>.</p>
+                            </div>
+                        </div>
+                        <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                        <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <li><b>[ A - Filtros]</b> - Usuário informa o filtros para de pesquisa para obter os registros desejados para aplicação da operação em lote.</li>
+                            <li><b>[ B - Botão para Filtros]</b> - Obtém a primeira página da lista paginda com base nos filtros, ou a primeira página da listagem sem filtros caso não sejam informados.</li>
+                            <li><b>[ C - Itens Selecionados]</b> - Após obter os itens o usuário informa os itens desejados para operação em lote.</li>
+                            <li><b>[ D - Botão para Operação em Lote]</b> - Envia os itens <b>selecionados</b> da página <b>visível</b> para que seja aplicada a operação em lote.</li>
+                            <li><b>[ E - Loading]</b> - Se trata de um componente da aplicação como um todo, deve estar presente em todas situações onde intercorram load de recursos, execução de scripts, interpretação de página e qualquer evento de resposta não instantâne que demande de tempo do usuário para aguardar a resposta, logo fica bastante claro que o loading para indicar o processamento de operações em lote se faz obrigatório.</li>
+                            <li><b>[ F - Retorno para Tela Inicial]</b> - Neste fluxo, o usuário não será encaminhado para outra tela, porém ao fim do processamento a tela deve voltar ao estado seu inicial.</li>
+                            <li><b>[ G - Mensagem de Retorno]</b> - E em caso de sucesso, a aplicação deve exibir a mensagem padrão* de sucesso ao usuário. Neste caso, por não se tratar de uma tela de crud simples e sim mais ligada a operações de negócio, havendo necessidade uma mensagem complementar a mesma deve ser adicionada ao final da mensagem padrão.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="formularios" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -734,7 +762,7 @@
                     </div>
                 </div>
             </section>
-            <section id="controles" class="section">
+            <section id="controles" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -776,56 +804,61 @@
                     </div>
                 </div>
             </section>
-            <section id="listatens" class="section main-feature-gray">
+            <section id="listatens" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-multipla-selecao.png" data-lightbox="example-set" data-title="Listagens">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-multipla-selecao.png" data-lightbox="example-set" data-title="Lista de Dados">
                                 <img src="img/estrutura/datatables-multipla-selecao.png" class="img-responsive" alt="">
+                            </a>
+                            <br />
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-agrupamento.png" data-lightbox="example-set" data-title="Lista de Dados">
+                                <img src="img/estrutura/datatables-agrupamento.png" class="img-responsive" alt="">
                             </a>
                         </div>
 
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Listagens - Datatable Padrão</h3>
-                                <p>Esta é a lista paginada padrão e recursos mínimos (paginação, filtragem e ordenação ) exigidos para nossas aplicações web.</p>
+                                <h3 class="title-small">Lista de Dados</h3>
+                                <p>O usuário final necessita obter de forma rápida as informações necessárias para executar suas tarefas cotidianas, e em resumo ele sempre iniciará sua busca em uma base que lhe retornará uma lista de dados, e diante das várias necessidades de manipulação dos dados destas listas, o mercado tem provido uma série componentes que facilitam a criação de lista de dados mais inteligentes.</p>
+                                <p>Neste tópico definimos o comportamento e utilização padrão de lista de dados para este padrão de interface.</p>
+                                <p>Esta é a lista paginada padrão e recursos mínimos (paginação, filtragem e ordenação ) exigidos para nossas aplicações web, podendo a mesma ter recurso de multipla seleção para aplicação de operações em todos itens selecionados.</p>
                                 <p>A utilização da mesma pode ser feita com base na exemplificação a seguir.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-agrupamento.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/datatables-agrupamento.png" alt="" width="100%">
-                            </a>
+                    <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                    <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <li><b>[ A - Múltipla Seleção ]</b> - Amplamente utilizado em listas de dados do mercado, o recurso de múltipla seleção tem função de <b>selecionar todos</b> os <b>itens visíveis na lista/página</b> de dados para que o usuário possa solicitar uma operação específica(processamento, etc.) em todos os itens selecionados.</li>
+                        <li><b>[ B - Checkbox de Seleção]</b> - Este checkbox permite ao usuário selecionar uma item na lista de dados para disponibilizá-lo para operação em lote, sendo que o mesmo também tem função de indicar se a linha está selecionada para operação em lote.</li>
+                        <li><b>[ C - Operação em Lote]</b> - Botão para execução da operação em lote. O uso desta funcionalidade também está detalhado no <a href="#fluxo-03-1"> Fluxo 03.1</a></li>
+                        <li><b>[ D - ]</b></li>
+                        <li><b>[ E - ]</b></li>
 
-                        </div>
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                            <!--
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-controller.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/listagem-controller.png" alt="" width="100%">
-                            </a>
-                            -->
-                        </div>
+                    </ul>
+
+                    <!--
+                    <div class="row">
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
-                            <!--
+                            &lt;!&ndash;
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-service.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem-service.png" alt="" width="100%">
                             </a>
-                            -->
+                            &ndash;&gt;
                         </div>
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
-                            <!--
+                            &lt;!&ndash;
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-entity.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/listagem-entity.png" alt="" width="100%">
                             </a>
-                            -->
+                            &ndash;&gt;
                         </div>
                     </div>
+                    -->
+
                 </div>
             </section>
-            <section id="relatorios" class="section">
+            <section id="relatorios" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -855,8 +888,7 @@
                     </div>
                 </div>
             </section>
-
-            <section id="impressao" class="section main-feature-gray">
+            <section id="impressao" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
