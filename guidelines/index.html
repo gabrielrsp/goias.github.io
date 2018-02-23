@@ -77,6 +77,8 @@
                 <li class="subnivel"><a href="#controles">Controles</a></li>
                 <li class="subnivel"><a href="#listatens">Listagens</a></li>
                 <li class="subnivel"><a href="#relatorios">Relatórios</a></li>
+                <li class="subnivel"><a href="#impressao">Impressão</a></li>
+
                 <li class="subnivel pendente"><a href="#confirmacao">Confirmações</a></li>
                 <li class="subnivel pendente"><a href="#formato-dados">Formato de Dados</a></li>
                 <li class="subnivel pendente"><a href="#validacoes-campos">Validações de Campos</a></li>
@@ -84,7 +86,6 @@
                 <li class="subnivel pendente"><a href="#notificacoes">Notificações</a></li>
                 <li class="subnivel pendente"><a href="#pesquisas">Pesquisas</a></li>
                 <li class="subnivel pendente"><a href="#recarregar">Recarregar</a></li>
-                <li class="subnivel pendente"><a href="#impressao">Impressão</a></li>
 
 
                 <li class=" pendente">                 <a href="#componentes">Componentes</a></li>
@@ -837,40 +838,21 @@
                         <li><b>[ F - Acordion para Agrupamento]</b> - Após o usuário arrastar a coluna desejada para agrupar, a lista de dados deve ser regorganizada para exibir os dados agrupados de forma que o usuário possa expandir o agupamento desejado para visualizar os itens contidos no mesmo.</li>
                         <li><b>[ G - Remover Agrupamento]</b> - O agrupamento na lista de dados é um recurso que deve ser aplicado somente na view do usuário, não sendo necessário que o mesmo solicite os dados novamente à aplicação, logo, a remoção do agrupamento também deve ser removida apenas na tela pelo botão indicado.</li>
                     </ul>
-
-                    <!--
-                    <div class="row">
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
-                            &lt;!&ndash;
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-service.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/listagem-service.png" alt="" width="100%">
-                            </a>
-                            &ndash;&gt;
-                        </div>
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
-                            &lt;!&ndash;
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-entity.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/listagem-entity.png" alt="" width="100%">
-                            </a>
-                            &ndash;&gt;
-                        </div>
-                    </div>
-                    -->
-
                 </div>
             </section>
             <section id="relatorios" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/relatorio-html.jpg" data-lightbox="example-set" data-title="Relatórios">
-                                <img src="img/estrutura/relatorio-html.jpg" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-relatorio-tela.png" data-lightbox="example-set" data-title="Relatórios">
+                                <img src="img/estrutura/datatables-relatorio-tela.png" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Relatórios</h3>
-                                <p></p>
+                                <p>Temos como premissa básica, que todo relatório solicitado pelo usuário deve ser atender a este padrão, simplificado composto apenas pelos filtros e lista de dados disponibilizada na tela em formato e estilização html.</p>
+                                <p>Porém, este padrão básico de relatório também exige funções mínimas para impressão e exportação, neste caso estilização para impressão e função para exportação da <b>Lista de Dados</b> em formato xls.</p>
                             </div>
                         </div>
                     </div>
@@ -885,7 +867,6 @@
                                 <img src="epgz/relatorio-result.png" alt="" width="100%">
                             </a>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -893,15 +874,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-relatorio-tela.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/datatables-relatorio-tela.png" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-relatorio-test-chrome.png" data-lightbox="example-set" data-title="Listagens">
+                                <img src="img/estrutura/datatables-relatorio-test-chrome.png" class="img-responsive" alt="">
                             </a>
                         </div>
 
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Estilização para Relatório Html</h3>
-                                <p></p>
+                                <p>Como detalhao, segue exemplificação da estilização para impressão da lista de dados em formato html.</p>
+                                <p>Em casos específicos, onde se faça a necessário a utilização de um layout governamental ou específico do órgão de forma que o mesmo venha ser utilizado como documento oficial ao invés de relatório analítico de dados, a prototipação do mesmo deverá ser homologada pela equipe de qualidade.</p>
                             </div>
                         </div>
                     </div>
@@ -913,10 +895,6 @@
 
                         </div>
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-relatorio-test-chrome.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/datatables-relatorio-test-chrome.png" alt="" width="100%">
-                            </a>
 
                         </div>
                         <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
