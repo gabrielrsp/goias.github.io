@@ -23,5 +23,5 @@ ul li{list-style: none;}
 div.feature-item p a, div.container ul li a, div.container ul li a:hover{color:#F89B30; font-weight: 400;}
 div.feature-item p a:hover{ color:#F89B30;}
 
-
+ul li.pendente a{opacity: 0.5;}
 
