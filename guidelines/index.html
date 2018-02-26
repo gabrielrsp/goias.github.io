@@ -78,8 +78,8 @@
                 <li class="subnivel"><a href="#listatens">Listagens</a></li>
                 <li class="subnivel"><a href="#relatorios">Relatórios</a></li>
                 <li class="subnivel"><a href="#impressao">Impressão</a></li>
+                <li class="subnivel"><a href="#confirmacoes">Confirmações</a></li>
 
-                <li class="subnivel pendente"><a href="#confirmacao">Confirmações</a></li>
                 <li class="subnivel pendente"><a href="#formato-dados">Formato de Dados</a></li>
                 <li class="subnivel pendente"><a href="#validacoes-campos">Validações de Campos</a></li>
                 <li class="subnivel pendente"><a href="#validacoes-regras">Validações de Regras</a></li>
@@ -689,7 +689,7 @@
                             <li><b>[ E - Preenchimento de Campos]</b> - Os campos devem ser preenchidos para que o usuário tenha certeza de que os dados a serem excluídos estejam de acordo com sua intenção.</li>
                             <li><b>[ F - Botão para Excluir]</b> - Este botão somente deve ser visível ao usuário somente quando as informações preenchidas no formulário se tratarem de informações já persistidas pela aplição, o que não acontece no detalhamento do <a href="crud-02">Crud Padrão 02.1</a>.</li>
                             <li><b>[ G - Modal de Confirmação]</b> - O modal de confirmação funciona como uma estratégia de "segurança" a fim de se ter uma garantia "mínima" da inteção de exclusão do registro por parte do usuário, evitando assim um prejuízo ao usuário por uma ação ocasionada por um engano. O mesmo também pode ser utilizado antes de qualquer outro tipo operação que se queira avisar o usuário sobre a indisponibilidade de reverter a ação.</li>
-                            <li><b>[ H - Mensaegm de Confirmação]</b> - Neste caso a mensagem "padrão" para solicitar a confirmação da intenção do usuário em excluir o registro.</li>
+                            <li><b>[ H - Mensagem de Confirmação]</b> - Neste caso a mensagem "padrão" para solicitar a confirmação da intenção do usuário em excluir o registro.</li>
                             <li><b>[ I - Botão para Confirmar Exclusão*]</b> - Este é o botão padrão para efetivar a exclusão.</li>
                             <li><b>[ J - Botão para Cancelar a Intenção de Operação]</b> - Neste caso, este botão funciona como recurso para que o usuário tenha opção de desistir de efetuar a operação. Além de cancelar a inteção de exclusão do registro, também tem função de fechar o modal e habilitar a tela sobreposta pelo modal. </li>
                             <li><b>[ J.1 - Botão para Cancelar a Intenção de Operação]</b> - Tem a mesma função do item (J), além de cancelar a inteção de exclusão do registro, também tem função de fechar o modal e habilitar a tela sobreposta pelo modal.</li>
@@ -892,26 +892,38 @@
                             <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/datatables-relatorio-impressao.png" data-lightbox="example-set" data-title="Listagens">
                                 <img src="img/estrutura/datatables-relatorio-impressao.png" alt="" width="100%">
                             </a>
-
-                        </div>
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-
-                        </div>
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
-                            <!--
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-service.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/listagem-service.png" alt="" width="100%">
-                            </a>
-                            -->
-                        </div>
-                        <div class="col-md-2 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
-                            <!--
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/listagem-entity.png" data-lightbox="example-set" data-title="Listagens">
-                                <img src="img/estrutura/listagem-entity.png" alt="" width="100%">
-                            </a>
-                            -->
                         </div>
                     </div>
+                </div>
+            </section>
+            <section id="confirmacoes" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/telas-confirmacao.png" data-lightbox="example-set" data-title="Relatórios">
+                                <img src="img/estrutura/telas-confirmacao.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Confirmações</h3>
+                                <p>O modal de confirmação funciona como uma estratégia de "segurança" a fim de se ter uma garantia "mínima" da inteção de exclusão/alteração do registro por parte do usuário,
+                                    evitando assim um prejuízo ao usuário por uma ação ocasionada por um engano. O mesmo também pode ser utilizado antes de qualquer outro tipo operação que se queira avisar o usuário sobre a indisponibilidade de reverter a ação.</li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
+                    <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <li><b>[A - Modal de Confirmação]</b> - Observe que as dimensões do modal de confirmação são fixas, e não devem ser alteradas. </li>
+                        <li><b>[ B - Mensagem de Confirmação]</b> - Para exclusão de registro, utilize a mensagem padrão de confirmação. Para confirmações de operações específicas do negócio, utilize mensagens pequenas a fim de não confundir o usuário quanto a operação.</li>
+                        <li><b>[ C - Botão para Cancelar a Intenção de Operação]</b> - Neste caso, este botão funciona como recurso para que o usuário tenha opção de desistir de efetuar a operação. Além de cancelar a inteção de exclusão do registro, também tem função de fechar o modal e habilitar a tela sobreposta pelo modal. </li>
+                        <li><b>[ C.1 - Botão para Cancelar a Intenção de Operação]</b> - Tem a mesma função do item (C), além de cancelar a inteção de exclusão do registro, também tem função de fechar o modal e habilitar a tela sobreposta pelo modal.</li>
+                        <li><b>[ D - Botão para Confirmar Exclusão*]</b> - Este é o botão padrão para efetivar a exclusão. Sendo que qualquer operação de exclusão lógica ou física de registro deverá ser representada por esta cor vermelha como demonstrado.</li>
+                        <li><b>[ E - Background de Bloqueio]</b> - O background de bloqueio de tela para obtenção de confirmação de operação.</li>
+                    </ul>
+
+
                 </div>
             </section>
 
