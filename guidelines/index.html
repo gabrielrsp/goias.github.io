@@ -80,11 +80,10 @@
                 <li class="subnivel"><a href="#impressao">Impressão</a></li>
                 <li class="subnivel"><a href="#confirmacoes">Confirmações</a></li>
                 <li class="subnivel"><a href="#excecoes">Exceções</a></li>
+                <li class="subnivel"><a href="#formato-dados">Formato de Dados</a></li>
+                <li class="subnivel"><a href="#validacoes-campos">Validações de Campos</a></li>
+                <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
 
-                <li class="subnivel pendente"><a href="#formato-dados">Formato de Dados</a></li>
-                <li class="subnivel pendente"><a href="#validacoes-campos">Validações de Campos</a></li>
-                <li class="subnivel pendente"><a href="#validacoes-regras">Validações de Regras</a></li>
-                <li class="subnivel pendente"><a href="#notificacoes">Notificações</a></li>
                 <li class="subnivel pendente"><a href="#pesquisas">Pesquisas</a></li>
                 <li class="subnivel pendente"><a href="#recarregar">Recarregar</a></li>
 
@@ -158,7 +157,6 @@
                     </div>
                 </div>
             </header>
-
             <section id="objetivo" class="section">
                 <div class="container">
                     <div class="row">
@@ -994,8 +992,7 @@
                     </div>
                 </div>
             </section>
-
-            <section id="" class="section main-feature-gray">
+            <section id="formato-dados" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
 
@@ -1032,6 +1029,48 @@
                                 <br />
                                 <p><b>Quando não usar máscaras?</b></p>
                                 <p>Não utilize máscaras de entrada de dados quando o campo por requisitos puder aceitar exceções e a máscara não permitir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="validacoes-campos" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/validacao-de-campos.png" data-lightbox="example-set" data-title="Responsividade"> <img src="img/estrutura/validacao-de-campos.png" class="img-responsive" alt=""> </a>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Validação de Campos</h3>
+                                <p>A estilização para validação de campos obrigatórios, tem o objetivo de reforçar ao usuário que o mesmo tentou efetuar uma operação sem o preenchimento dos campos informados como obrigatórios (asterisco), e que a operação não poderá ser efetuada sem o preenchimento dos mesmos.</p>
+                                <p>Assim como nas mensagens de validação as bordas em vermelho reforçam o estado de impedimento da operação.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="notificacoes" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/validacao-de-regras.png" data-lightbox="example-set" data-title="Responsividade"> <img src="img/estrutura/validacao-de-regras.png" class="img-responsive" alt=""> </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Notificações</h3>
+                                <p>As notificações deste padrão, tem como objetivo informar/alertar o usuário sobre o resultado de suas solicitações.</p>
+
+                                <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                    <li><b>[A - Sucesso]</b> - Em caso de sucesso na operação, a notificação em <b>verde</b> como exemplificada deverá ser exibida, sendo que a mensagem no caso de uma operação padrão de inclusão deverá ser a padrão exemplificada.</li>
+                                    <li><b>[A - Erro]</b> - Em caso de falha ou impedimento na operação, a notificação em <b>vermelho</b> como exemplificada deverá ser exibida, sendo que a mensagem no caso de uma falha na operação de exclusão em crud padrão deverá ser a padrão exemplificada.</li>
+                                    <li><b>[A - Informativa]</b> - Mensagens de regras de negócio que não sejam impeditivas mas que devam obter a antenção do usuário devem ser estar de acordo com a exemplicada e caracterizada na cor amarela como demostrado.</li>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
