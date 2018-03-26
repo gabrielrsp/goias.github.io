@@ -1099,6 +1099,39 @@
                     </div>
                 </div>
             </section>
+            <section id="loading" class="section main-feature-gray">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-loading.png" data-lightbox="example-set" data-title="Loading"> <img src="img/estrutura/tela-loading.png" class="img-responsive" alt=""> </a>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" style="margin-top: 20px;">
+                                <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-loading-container.png" data-lightbox="example-set" data-title="Loading Container"> <img src="img/estrutura/tela-loading-container.png" class="img-responsive" alt=""> </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Loading</h3>
+                                <p>Como observado em tópicos anteriores, reforçamos a obrigatoriedade da aplicação nunca deixar de dar uma resposta ao usuário, neste tópico abordamos a importância da utilização e padronização da sinalização de operação em processamento "loading", pois ela informa ao usuário o andamento da operação solicitada.</p>
+                                <p>Neste padrão utilizamos de dois elementos para atendimento deste requisito, que são a <b>Barra de Progresso</b> e o <b>spinner</b>.</p>
+
+                                <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                    <li><b>[A - Barra de Progresso]</b> - A barra de progresso tem a função de mostrar ao usuário o quanto de sua solicitação já foi processado. Em alguns cenários essa informação pode ser apenas aproximada, mesmo assim é uma informação de grande valia para o usuário do sistema. A barra de progresso deve ser exibida apenas no topo da tela principal como exemplificado no print.</li>
+                                    <li><b>[B - Spinner]</b> - O spinner tem a função de indicar ao usuário que algo está sendo processado. Sua animação/giro tem a função de obter a atenção do usuário para lhe reforçar que seu pedido foi encaminhado e esta sendo processado/atendido/validado e etc. O spinner "padrão" sempre deve ser exibido no canto direito superior da tela e no centro do <a href="#container-principal">container principal</a>, sendo que quando dentro do container o conteúdo/formulário deverá ser bloqueado com o background em azul "como no exemplo" de forma a impedir que o usuário dispare outras solicitações sem que a primeira delas tenha sido concluída pela aplicação. Para esse bloqueio, utilizamos o componente js BlockUi, que já se encontra estilizado e configurado nos framoworks .net e java.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!--
             <section id="" class="section main-feature-gray">
                 <div class="container">
