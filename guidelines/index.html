@@ -305,15 +305,15 @@
                         -->
 
                         <div class="col-md-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/estrutura-detalhada.png" data-lightbox="example-set" data-title="Container Principal">
-                                <img src="img/estrutura/estrutura-detalhada.png" class="img-responsive" alt="Container Principal">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-estrutura-menu.png" data-lightbox="example-set" data-title="Container Principal">
+                                <img src="img/estrutura/tela-estrutura-menu.png" class="img-responsive" alt="Container Principal">
                             </a>
                         </div>
 
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Estrutura</h3>
-                                <p>O corpo da estrutura padrão das aplicações web está divido em 4 partes, sendo elas topo, barra de acessibilidade, menu de aplicação lateral e container para desenvolimento dos casos de uso. </p>
+                                <p>O corpo da estrutura padrão das aplicações web está divido em 4 partes, sendo elas topo fixo, barra de acessibilidade, menu de aplicação lateral retrátil e container para desenvolimento dos casos de uso. </p>
                                 <p>A "estrutura padrão" está preparada para se adaptar em diversas resoluções. Deixamos claro que na construção deste Padrão de Interface cada elemento, cor, fonte e comportamento foram elaborados de forma a atender as necessidades do usuário final, por esse motivo, sugestões de alteração do mesmo devem ser aprovadas pela equipe responsável pela evolução do padrão.</p>
                             </div>
                         </div>
@@ -325,9 +325,9 @@
                             <li><b>[C - Espaço para marca da superintenência do sistema ou órgão responsável pelo sistema]</b> - Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
                             <li><b>[D - Espaço para marca do órgão de maior hierarquia ao qual o sistema é subornidado]</b> - Como no modelo, esta marca necessariamente precisa ser branca com background transparente. Dimensões não podem ser alteradas.</li>
                             <li><b>[E - Espaço destinado a marca de representação do governo corrente]</b> - Assim como as demais, é um elemento obrigatório e não deve ser alterado</li>
-                            <li><b>[F - Label para indicação do tipo de tela da funcionalidade]</b></li>
-                            <li><b>[G - O label de indicação de detalhe e agrupamento de elementos de formulário]</b> - Tem como objetivo, apoiar na organização do forumlário, tornando mais claro e de fácil preencimento.</li>
-                            <li><b>[H - Container para menu e ícones para identificação de acesso à funcionalidade]</b> - Utilizar palavras curtas para representação da funcionalidade para melhor harmonia da coluna de ítens de menu.</li>
+                            <li><b>[F - Espaço destinado para versão do sistema]</b></li>
+                            <li><b>[G - Label de indicação do nome da funcionalidade]</b></li>
+                            <li><b>[H - Botão para abertura do menu retrátil]</b> - Seu objetivo é manter um visual mais limpo da tela, ao deixar fechado. Ao clicar no botão de expansão, o menu será apresentado e nele deverá constar a logomarca de representação do governo corrente no seu topo e logo abaixo, deverá apresentar as opções de acesso às funcionalidades da aplicação.</li>
                         </ul>
                     </div>
                 </div>
@@ -336,14 +336,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/topo-detalhe.png" data-lightbox="example-set" data-title="Topo">
-                                <img src="img/estrutura/topo-detalhe.png" class="img-responsive" alt="Topo">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img\estrutura\tela-topo-fixo.png" data-lightbox="example-set" data-title="Topo">
+                                <img src="img\estrutura\tela-topo-fixo.png" class="img-responsive" alt="Topo">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Topo</h3>
+                                <h3 class="title-small">Topo Fixo</h3>
                                 <p>Em resumo, esta é a visão do topo do layout do padrão de interface. Como detalhado no tópico anterior, estas são as únicas informações textuais e visuais que o topo dos sistemas aderentes a este padrão de interface deve conter exatamente com essas caracteristicas.</p>
+                                <p>É Importante ressaltar que este topo agora é fixo, ou seja, ao girar a barra de rolagem (scrollbar) para baixo, toda a parte do topo permanecerá no mesmo lugar, tomando apenas um aspecto "fumê", cinza escuro e transparente.</p>
                             </div>
                         </div>
                     </div>
@@ -801,7 +802,7 @@
                             <li><b>[ I - Adicionar]</b> - Este botão tem como função, a adição de itens de sub-formulários em cruds que contenham lista de ítens em seu crud de entrada de dados. Observação: Mesmo neste caso a persistência fica sob responsabilidade do botão salvar.</li>
                             <li><b>[ J - Remover]</b> - Tem como função apenas remover na tela itens de listas internas em formulários ou estruturas de sub-formulários, preparando assim a tela para que os dados solicitados sejam efetivamente removidos pelo botão Salvar, que nestes casos excluirá logicamente os sub itens de entidades relacionadas e suas referências onde se faça necessário.</li>
                             <li><b>[ K - Operação Personalizada]</b> - A cor e o ícone deste botão indica que o mesmo dispara uma operação personalizada que persistirá dados na aplicação. Operações como esta não devem fazer parte de cruds básicos, as mesmas devem estar restritas à telas que trabalhem o negócio em si da aplicação. Para exemplificarmos sua utilização utilizamos este <b>exemplo</b> do projeto Novo Siplam > Configurações > Atualizar Exercícios dos Programas > Atualizar Programas, onde verificando pelo caminho do menu que não se trata de uma tela de crud básico.</li>
-                            <li><b>[ L - Limpar]</b> - Uma função simples mas de grande valia para a interface, tem como objetivo limpar os campos para que o usuário informe novos filtros para pesquisa. Não deve recarregar ou limpar a lista de resultados obtida anteriormente.</b> </li>
+                            <li><b>[ L - Limpar]</b> - Uma função simples mas de grande valia para a interface, tem como objetivo limpar os campos para que o usuário informe novos filtros para pesquisa. Não deve recarregar ou limpar a lista de resultados obtida anteriormente. </li>
                             <li><b>[ M - Exportar PDF/Filtrada]</b> - Este botão tem como função exportar uma listagem paginada/filtrada em formato xls.</li>
                             <li><b>[ N - Excluir]</b> - O botão excluir é o primeiro ponto de iteração do usuário para que ele possa excluir uma informação na aplicação. Ao clicar neste botão a aplicação deve sempre* exibir o modal de confirmação de solicitação de exclusão, somente após essa confirmação a operação poderá ser persistida na aplicação.</li>
                             <li><b>[ O - Cancelar]</b> - Tem a única função de voltar o usuário para a tela inicial do crud. Este botão não deve desfazer nenhuma operação já persistida no banco de dados, como também não deve manter qualquer campo preenchido para inclusão ou operação posterior. </li>
@@ -912,7 +913,7 @@
                             <div class="feature-item">
                                 <h3 class="title-small">Confirmações</h3>
                                 <p>O modal de confirmação funciona como uma estratégia de "segurança" a fim de se ter uma garantia "mínima" da inteção de exclusão/alteração do registro por parte do usuário,
-                                    evitando assim um prejuízo ao usuário por uma ação ocasionada por um engano. O mesmo também pode ser utilizado antes de qualquer outro tipo operação que se queira avisar o usuário sobre a indisponibilidade de reverter a ação.</li>
+                                    evitando assim um prejuízo ao usuário por uma ação ocasionada por um engano. O mesmo também pode ser utilizado antes de qualquer outro tipo operação que se queira avisar o usuário sobre a indisponibilidade de reverter a ação.
                                 </p>
                             </div>
                         </div>
@@ -1216,7 +1217,7 @@
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Ajuste de Fontes</h3>
-                                <p>Todas as fontes deste padrão de interface foram escolhidas de forma a proporcionar ao usuário uma leitura confotável, pois mesmo usuários que não possuem nenhuma deficiência visual podem sentir dificuldades durante uma leitura de uma interface cujas fontes sejam muito pequenas.</p>
+                                <p>Todas as fontes deste padrão de interface foram escolhidas de forma a proporcionar ao usuário uma leitura confortável, pois mesmo usuários que não possuem nenhuma deficiência visual podem sentir dificuldades durante uma leitura de uma interface cujas fontes sejam muito pequenas.</p>
                                 <br />
                                 <p>De toda forma, para apoiar o atendimento da "Lei Brasileira de Inclusão", dispomos neste padrão de interface botões na toolbar para ajuste do tamanho da fonte como indicado na imagem ao lado. Por ser uma personaliação do usuário, o ajuste deve ser mantido na área de trabalho do usuário de forma que ele não precise repetir a configuração sempre que mudar de tela.</p>
                                 <br />
@@ -1306,6 +1307,33 @@
                     </div>
                 </div>
             </section>
+            <section id="temas" class="section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-ajuste-temas-toolbar.png" data-lightbox="example-set" data-title="Ajuste de Fontes"> <img src="img/estrutura/tela-ajuste-temas-toolbar.png" class="img-responsive" alt=""> </a>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" style="padding-top: 20px;">
+                                <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-ajuste-temas.png" data-lightbox="example-set" data-title="Ajuste de Fontes"> <img src="img/estrutura/tela-ajuste-temas.png" class="img-responsive" alt=""> </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Temas</h3>
+                                <p>A aplicação de temas busca trazer maior agradabilidade e controle para o usuário, oferecendo diferentes modos de visualização da interface da maneira que mais se adequar à sua preferência.</p>
+                                <p>Esta funcionalidade permite a alteração das cores da interface, apresentando outros quatro temas diferentes Além da original ("Azul Escuro).</p>
+                                <p> Ao clicar na opção "Temas" a aplicação irá apresentar os 5 temas disponíveis onde será possível alternar entre eles.</p>
+                                <p>Os temas são: o <b>"Azul Claro", "Azul Escuro", "Cinza Claro", "Cinza Escuro"</b> e <b>"Petróleo"</b>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="copyright">
                 <div class="container">
                     <div class="row">
