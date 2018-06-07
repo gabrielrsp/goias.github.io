@@ -327,7 +327,7 @@
                             <li><b>[E - Espaço destinado a marca de representação do governo corrente]</b> - Assim como as demais, é um elemento obrigatório e não deve ser alterado</li>
                             <li><b>[F - Espaço destinado para versão do sistema]</b></li>
                             <li><b>[G - Label de indicação do nome da funcionalidade]</b></li>
-                            <li><b>[H - Botão para abertura do menu retrátil]</b> - Seu objetivo é manter um visual mais limpo da tela, ao deixar fechado. Ao clicar no botão de expansão, o menu será apresentado e nele deverá constar a logomarca de representação do governo corrente no seu topo e logo abaixo, deverá apresentar as opções de acesso às funcionalidades da aplicação.</li>
+                            <li><b>[H - Botão para abertura do menu retrátil]</b> - Seu objetivo é manter um visual mais limpo da tela, ao deixar fechado. Ao clicar no botão de expansão, o menu será apresentado e nele deverá constar a logomarca de representação do governo corrente no seu topo e logo abaixo, deverá apresentar os itens de acesso às funcionalidades da aplicação.</li>
                         </ul>
                     </div>
                 </div>
@@ -373,21 +373,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/menu-detalhado.png" data-lightbox="example-set" data-title="Menu de aplicações">
-                                <img src="img/estrutura/menu-detalhado.png" class="img-responsive" alt="">
+                            <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-menu-retratil.png" data-lightbox="example-set" data-title="Menu de aplicações">
+                                <img src="img/estrutura/tela-menu-retratil.png" class="img-responsive" alt="">
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Menu Lateral</h3>
+                                <h3 class="title-small">Menu Lateral Retrátil</h3>
                                 <p>Menus são elementos de navegação da interface que devem apresentar as  opções de navegação da aplicação.
                                     A escolha do uso de menus laterais permite uma maior visibilidade a todos os ítens de menu sem que os mesmos sobreponham a área útil dos formulários, facilitando assim ao usuário memorizar todas as operações disponíveis na aplicação.
-                                    O usuário deve ter opção de expandir e recolher todos os ítens de menu da forma que mais lhe atenda.
-                                </p>
-                                <p>Agrupe adequadamente todos os ítens de menu de acordo com sua função evite ao máximo criar subníveis.
-                                    A nomenclatura do menu e do submenu deve ser bem clara para o que usuário possa identificar exatamente o que aquela função se propõe.
-                                </p>
-                                <p>Utilize no máximo 3 níveis de menu para facilitar o acesso do usuário ao recurso desejado.</p>
+                                <p>Como detalhado anteriormente, o usuário deve ter opção de expandir e recolher o menu para deixar a tela mais limpa e menos carregada, dando mais espaço para o container principal e melhorando assim a visibilidade.</p>
                             </div>
                         </div>
                     </div>
@@ -1324,7 +1319,7 @@
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
                                 <h3 class="title-small">Temas</h3>
-                                <p>A aplicação de temas busca trazer maior agradabilidade e controle para o usuário, oferecendo diferentes modos de visualização da interface da maneira que mais se adequar à sua preferência.</p>
+                                <p>A aplicação de temas busca trazer maior agradabilidade para o usuário, oferecendo diferentes modos de visualização da interface da maneira que mais se adequar à sua preferência.</p>
                                 <p>Esta funcionalidade permite a alteração das cores da interface, apresentando outros quatro temas diferentes Além da original ("Azul Escuro).</p>
                                 <p> Ao clicar na opção "Temas" a aplicação irá apresentar os 5 temas disponíveis onde será possível alternar entre eles.</p>
                                 <p>Os temas são: o <b>"Azul Claro", "Azul Escuro", "Cinza Claro", "Cinza Escuro"</b> e <b>"Petróleo"</b>.</p>
@@ -1333,7 +1328,26 @@
                     </div>
                 </div>
             </section>
+            <section id="botao-fixo" class="section main-feature-gray">">
+                <div class="container">
+                    <div class="row">
 
+                        <div class="col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <a class="example-image-link fancybox-thumbs" data-fancybox-group="thumb" href="img/estrutura/tela-botao-fixo.png" data-lightbox="example-set" data-title="Ajuste de Fontes"> <img src="img/estrutura/tela-botao-fixo.png" class="img-responsive" alt=""> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="feature-item">
+                                <h3 class="title-small">Botões Fixos</h3>
+                                <p>Os botões para execução de operações dentro do container agora são fixos, ou seja, ao girar a barra de rolagem (scrollbar) para baixo, eles ainda aparecerão na tela.</p>
+                                <p>Ao girar a barra de rolagem, a partir do momento em que o topo fixo (navbar) sobrepor o container, os botões irão reduzir apenas ao seu ícone de representação como representado na imagem.</p>
+                                <p>Ao girar a barra de rolagem para baixo até o final da pagina, deverá surgir um botão no canto inferior direito que ao clicar, ele levará de volta à parte superior da página, onde os botões voltarão ao seu formato original, com ícone e nome</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="copyright">
                 <div class="container">
                     <div class="row">
@@ -1345,6 +1359,7 @@
                     </div>
                 </div>
             </section>
+
         </div>
 
         <script src="js/jquery-2.1.4.min.js"></script>
