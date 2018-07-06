@@ -65,13 +65,15 @@
 
                 <li class="subnivel"><a href="#crud-01-lista">Crud 01 :: Lista Paginada</a>
                 <li class="subnivel"><a href="#crud-01-lista-preenchida">Crud 01.1 :: Lista Paginada Preenchida</a>
+                <li class="subnivel"><a href="#crud-02-lista">Crud 02 :: Cadastro</a>
+
 
                 <li class="subnivel"><a href="#fluxo-01-incluir">Fluxo 01 - Lista para Form :: Incluir</a>
                 <li class="subnivel"><a href="#fluxo-01-1-validar">Fluxo 01.1 - Form :: Validação</a>
 
-                <li class="subnivel"><a href="#fluxo-02-1">Fluxo 02.1 - Lista para Form :: Alterar</a>
-                <li class="subnivel"><a href="#fluxo-02-2">Fluxo 02.2 - Lista para Form :: Excluir</a>
-                <li class="subnivel"><a href="#fluxo-03-1">Fluxo 03.1 - Lista para Processamento em Lote:: Processar</a>
+                <li class="subnivel"><a href="#fluxo-02">Fluxo 02 - Lista para Form :: Editar</a>
+                <li class="subnivel"><a href="#fluxo-02-1">Fluxo 02.1 - Lista para Form :: Excluir</a>
+                <li class="subnivel"><a href="#fluxo-03">Fluxo 03 - Lista para Processamento em Lote:: Processar</a>
 
                 <li class="subnivel"><a href="#formularios">Formulários</a></li>
                 <li class="subnivel"><a href="#controles">Controles</a></li>
@@ -84,7 +86,7 @@
                 <li class="subnivel"><a href="#validacoes-campos">Validações de Campos</a></li>
                 <li class="subnivel"><a href="#notificacoes">Notificações</a></li>
 
-                <li class="subnivel"><a href="#pesquisas">Pesquisas</a></li>
+                <li class="subnivel"><a href="#modal-pesquisa">Modal de Pesquisa</a></li>
                 <li class="subnivel"><a href="#loading">Recarregar</a></li>
 
 
@@ -365,7 +367,7 @@
                                 <h3 class="title-small">Barra de Ferramentas</h3>
                                 <p>Assim como os demais componentes que compõem a 'estrutura' deste padrão interface, a barra de ferramentas é um recurso de grande importância para usuário e para a qualidade do sistema.
                                    Dividida em três grupos de recursos, provê ferramentas de acessibilidade, botões para configuração, identificação de versão do sistema e função para encerrar a sessão do usuário.</p>
-                                <p>O detalhamento de cada recurso da barra de acessibilidade pode ser na sessão <a href="#usabilidade">Usabilidade</a></p>
+                                <p>O detalhamento de cada recurso da barra de acessibilidade pode ser na sessão <a href="#acessibilidade">Acessibilidade</a></p>
                             </div>
                         </div>
                     </div>
@@ -509,7 +511,7 @@
                                 A lista paginada não deve ser carregada no load na tela para evitar consultas desnecessárias ao servidor, o carregamento da lista paginada só deve ser feito após o disparo da ação filtrar pelo botão filtrar.
                             </li>
                             <li><b>[E - Lista paginada: Títulos de Colunas]</b> - Devem sempre estar alinhados à esquerda.</li>
-                            <li><b>[F - Label instrução para agrupamento]</b> - Se trata de uma função específica agrupamento, abordada no tópico <a href="#componentes">"Componentes"</a> </li>
+                            <li><b>[F - Label instrução para agrupamento]</b> - Se trata de uma função específica agrupamento, abordada no tópico <a href="#crud-01-lista-preenchida">"Crud 01.1 :: Lista Paginada Preenchida"</a> </li>
                             <li><b>[G - Controle de paginação padrão]</b> - O controle de paginação das listas paginadas utilizados nos frameworks corporativos devem seguir este <b>padrão</b> independente do componente adotado, com as funções abaixo.</li>
                             <li><b>[G.1 - Acesso Rápido]</b> - Por número de página</li>
                             <li><b>[G.2 - Configuração de Registros]</b> - A serem exibidos por página</li>
@@ -552,7 +554,7 @@
                     </div>
                 </div>
             </section>
-            <section id="crud-02" class="section">
+            <section id="crud-02-lista" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -562,8 +564,8 @@
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Crud Padrão 02.1 - Cadastro</h3>
-                                <p>Este é o <b>Crud Padrão 02.1</b></p>
+                                <h3 class="title-small">Crud Padrão 02 - Cadastro</h3>
+                                <p>Este é o <b>Crud Padrão 02</b></p>
                                 <p>Formulário para inclusão, alteração ou exclusão de registros.</p>
                             </div>
                         </div>
@@ -593,15 +595,15 @@
                                 <h3 class="title-small">Fluxo 01 - Lista para Form :: Incluir</h3>
                                 <p>Este fluxo exemplifica a inclusão de um novo registro no Crud Padrão 01.</p>
                                 <p>Este fluxo padrão deve ser adotado em todos os cruds básicos da aplicação. O mesmo é divido basicamente em duas telas, sendo a primeira o
-                                    <a href="#crud-01-lista">"Crud Padrão 01"</a> e a segunda pelo <a href="#crud-02">"Crud Padrão 02"</a>. O fluxo é dividido em duas fases para simplificação do desenvolvimento bem como execução de testes e entregas de demandas.</p>
+                                    <a href="#crud-01-lista">"Crud Padrão 01"</a> e a segunda pelo <a href="#crud-02-lista">"Crud Padrão 02"</a>. O fluxo é dividido em duas fases para simplificação do desenvolvimento bem como execução de testes e entregas de demandas.</p>
                             </div>
                         </div>
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
                         <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <li><b>[A - Novo Item]</b> - Neste fluxo e nesta tela de crud, tem a única função de encaminhar o usuário para a tela de entrada de dados.</li>
-                            <li><b>[B - Campos de Formulário]</b> - Elementos de formulários para entrada de dados pelo usuário. Comportamentos e funções de cada componente corporativo de formulário exemplo input text, select, textarea e etc são detalhados na sessão  <a href="#componentes">"Componentes"</a>.</li>
+                            <li><b>[B - Campos de Formulário]</b> - Elementos de formulários para entrada de dados pelo usuário. Comportamentos e funções de cada componente corporativo de formulário exemplo input text, select, textarea e etc.</li>
                             <li><b>[C - Salvar]</b> - Botão para enviar os dados ao back-end para validação e persistência dos dados. Todas as mensagens de negócio retornadas devem ser apresentadas nesta mesma página.</li>
-                            <li><b>[D - Mensagem Sucesso]</b> - Mensagem de sucesso retornada pela operação de "inclusão" de dados. Toda operação disparada pelo usuário através dos botões de controle do formulário, devem retornar uma mensagem sobre o resultado da mesma, seja sucesso ou não. Para informações e detalhamento do padrão de mensagens, consulte o tópico <a href="#componentes">"Validações de Regras"</a>.</li>
+                            <li><b>[D - Mensagem Sucesso]</b> - Mensagem de sucesso retornada pela operação de "inclusão" de dados. Toda operação disparada pelo usuário através dos botões de controle do formulário, devem retornar uma mensagem sobre o resultado da mesma, seja sucesso ou não.</li>
                             <li><b>[E - Atualização de Tela]</b> - Ao realizar a "operação" com sucesso, a aplicação deve retornar a tela a qual o usuário iniciou sua solicitação de inclusão de dados. E esta tela deve estar em seu estado inicial, sem a seleção qualquer filtros ou dado carregado na lista paginada inicial.</li>
                             <li><b>[F - Evidenciação de Operação Realizada]</b> - Caso o usuário necessite verificar a informação incluída, o mesmo precisará efetuar uma pesquisa ou consulta informando os dados desejados. Desta forma, mantemos a política de somente oferecer ao usuário, informações que o mesmo solicitou.</li>
                         </ul>
@@ -633,7 +635,7 @@
                     </div>
                 </div>
             </section>
-            <section id="fluxo-02-1" class="section main-feature-gray">
+            <section id="fluxo-02" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -646,7 +648,7 @@
                                 <h3 class="title-small">Fluxo 02.1 - Lista para Form:: Editar</h3>
                                 <p>Este fluxo padrão 02, define comportamento e tratamento de tela para alteração de dados por meio do mesmo formulário utilizado no fluxo 01 para entrada de novos dados.</p>
                                 <p>O fluxo se resume em:</p>
-                                <p>- O usuário seleciona a funcionlidade desejada através o menu da aplicação e recebe o <a href="crud-01-lista">Crud Padrão 01</a> para inicar este fluxo que detalhamos abaixo.</p>
+                                <p>- O usuário seleciona a funcionlidade desejada através o menu da aplicação e recebe o <a href="#crud-01-lista">Crud Padrão 01</a> para inicar este fluxo que detalhamos abaixo.</p>
                             </div>
                         </div>
                         <h5 class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Detalhamento</h5>
@@ -668,7 +670,7 @@
                     </div>
                 </div>
             </section>
-            <section id="fluxo-02-2" class="section">
+            <section id="fluxo-02-1" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -689,7 +691,7 @@
                             <li><b>[ C - Resultado]</b> - Registro(s) encontrado(s).</li>
                             <li><b>[ D - Foco em Linha para Exclusão]</b> - Iluminação de linha para apoiar a seleção acertiva do ítem para exclusão.</li>
                             <li><b>[ E - Preenchimento de Campos]</b> - Os campos devem ser preenchidos para que o usuário tenha certeza de que os dados a serem excluídos estejam de acordo com sua intenção.</li>
-                            <li><b>[ F - Botão para Excluir]</b> - Este botão somente deve ser visível ao usuário somente quando as informações preenchidas no formulário se tratarem de informações já persistidas pela aplição, o que não acontece no detalhamento do <a href="crud-02">Crud Padrão 02.1</a>.</li>
+                            <li><b>[ F - Botão para Excluir]</b> - Este botão somente deve ser visível ao usuário somente quando as informações preenchidas no formulário se tratarem de informações já persistidas pela aplição, o que não acontece no detalhamento do <a href="#crud-02-lista">"Crud Padrão 02"</a>.</li>
                             <li><b>[ G - Modal de Confirmação]</b> - O modal de confirmação funciona como uma estratégia de "segurança" a fim de se ter uma garantia "mínima" da inteção de exclusão do registro por parte do usuário, evitando assim um prejuízo ao usuário por uma ação ocasionada por um engano. O mesmo também pode ser utilizado antes de qualquer outro tipo operação que se queira avisar o usuário sobre a indisponibilidade de reverter a ação.</li>
                             <li><b>[ H - Mensagem de Confirmação]</b> - Neste caso a mensagem "padrão" para solicitar a confirmação da intenção do usuário em excluir o registro.</li>
                             <li><b>[ I - Botão para Confirmar Exclusão*]</b> - Este é o botão padrão para efetivar a exclusão.</li>
@@ -701,7 +703,7 @@
                     </div>
                 </div>
             </section>
-            <section id="fluxo-03-1" class="section main-feature-gray">
+            <section id="fluxo-03" class="section main-feature-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -711,7 +713,7 @@
                         </div>
                         <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="feature-item">
-                                <h3 class="title-small">Fluxo 03.1 - Lista para Processamento em Lote:: Processar</h3>
+                                <h3 class="title-small">Fluxo 03 - Lista para Processamento em Lote:: Processar</h3>
                                 <p>.</p>
                             </div>
                         </div>
@@ -760,7 +762,7 @@
                             <li><b>[ B - Campos com tamanho adequado]</b> - Um erro bastante comum e de grande impacto nas aplicações que deve ser evitado. Se trata de uma implementação de baixíssima complexidade e que garante um layout mais limpo ao usuário final. Como descrito acima, o tamanho dos campos na tela não devem ser maiores ou menores que o necessário.</li>
                             <li><b>[ C - Campos somente leitura]</b> - Campos somente leitura tem a finalidade de facilitar a leitura do usuário com o foco no valor que o mesmo está interessado em consultar. Como já é de conhecimento, também é recurso para impedir que o usuário insira ou altere um dado específico que o mesmo não deva por limitação de acesso.</li>
                             <li><b>[ D - Colunas do formulário]</b> - Cruds complexos que exijam maior quantidade de itens na tela podem utilizar de mais de duas coluns na tela, desde que mantenha-se a simetria e harmonia do layout como no exemplo dado.</li>
-                            <li><b>[ E - Ações do adicionais]</b> - Ações adicionais para consulta, pesquisa e adição de dados na tela podem ser utilizadas desde que não persistam ou excluam dados sem a iteração do usuário com os controles padrões. A fim de manter um padrão não somente do layout da interface devemos utilizar somente componentes adicionais homologados tratados no tópico <a href="#componentes">Componentes</a></li>
+                            <li><b>[ E - Ações adicionais]</b> - Ações adicionais para consulta, pesquisa e adição de dados na tela podem ser utilizadas desde que não persistam ou excluam dados sem a iteração do usuário com os controles padrões. A fim de manter um padrão não somente do layout da interface devemos utilizar somente componentes adicionais homologados.</li>
                         </ul>
                     </div>
                 </div>
@@ -835,7 +837,7 @@
                     <ul class=" wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                         <li><b>[ A - Múltipla Seleção ]</b> - Amplamente utilizado em listas de dados do mercado, o recurso de múltipla seleção tem função de <b>selecionar todos</b> os <b>itens visíveis na lista/página</b> de dados para que o usuário possa solicitar uma operação específica(processamento, etc.) em todos os itens selecionados.</li>
                         <li><b>[ B - Checkbox de Seleção]</b> - Este checkbox permite ao usuário selecionar uma item na lista de dados para disponibilizá-lo para operação em lote, sendo que o mesmo também tem função de indicar se a linha está selecionada para operação em lote.</li>
-                        <li><b>[ C - Operação em Lote]</b> - Botão para execução da operação em lote. O uso desta funcionalidade também está detalhado no <a href="#fluxo-03-1"> Fluxo 03.1</a></li>
+                        <li><b>[ C - Operação em Lote]</b> - Botão para execução da operação em lote. O uso desta funcionalidade também está detalhado no <a href="#fluxo-03"> Fluxo 03</a>.</li>
                         <li><b>[ D - Recurso para Agrupamento]</b> - Indica que a função de agrupamento por colunas está habilitada. Para habilitar uma coluna o usuário precisa clicar na coluna desejada e arrastar para a área de agrupamento.</li>
                         <li><b>[ E - Coluna com Agrupamento Ativo]</b> - Indica que a coluna em questão possui a função de agrupamento habilitada.</li>
                         <li><b>[ F - Acordion para Agrupamento]</b> - Após o usuário arrastar a coluna desejada para agrupar, a lista de dados deve ser regorganizada para exibir os dados agrupados de forma que o usuário possa expandir o agupamento desejado para visualizar os itens contidos no mesmo.</li>
@@ -1065,7 +1067,7 @@
                     </div>
                 </div>
             </section>
-            <section id="pesquisa" class="section">
+            <section id="modal-pesquisa" class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
