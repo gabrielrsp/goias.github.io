@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2ef2fb-4c61-4a92-bf87-1f1663777517" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-ajsute-background.epgz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-controles-basicos.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-controles-basicos.epgz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-laptop-1024-resolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-laptop-resolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-max-resolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-mobile-L-resolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-mobile-S-resolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-tablet-1024-resolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas/centralizar-marcas-alinhar-topo-wide-resolution.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-0.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-0.epgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-1.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-1.epgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-2.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-2.epgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-3.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-3.epgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-4.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-responsividade-4.epgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/epgz/tela-topo-fixo.epgz" afterPath="$PROJECT_DIR$/guidelines/epgz/tela-topo-fixo.epgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-0.png" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-1.png" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-2.png" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-3.png" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/img/estrutura/tela-topo-fixo.png" afterPath="$PROJECT_DIR$/guidelines/img/estrutura/tela-topo-fixo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guidelines/index.html" afterPath="$PROJECT_DIR$/guidelines/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,9 +36,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/guidelines/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="800" column="45" lean-forward="false" selection-start-line="800" selection-start-column="45" selection-end-line="800" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="286">
+              <caret line="354" column="0" lean-forward="true" selection-start-line="354" selection-start-column="0" selection-end-line="354" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,6 +51,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>[ O - Cancelar]</find>
+      <find>topo fixo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,7 +84,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1019" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -80,8 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -122,12 +141,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="epgz" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goias.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goias.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guidelines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrutura" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -137,6 +180,146 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/guidelines/img/estrutura/alinhamento-reguas" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/epgz/inicial-descritiva.epgz</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/epgz/tela-botao-fixo.epgz</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/epgz/tela-estrutura-menu.epgz</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/epgz/tela-inverter-cores.epgz</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/epgz/tela-topo-fixo.epgz</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/400.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/401.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/403.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/404.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/408.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/500.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/acessibilidade.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/inicial-descritiva.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-acessibilidade.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-ajuste-contraste.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-ajuste-temas.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-aplicar-relevo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-botao-fixo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-estrutura-menu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-inverter-cores.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-loading.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-0.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-responsividade-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/estrutura/tela-topo-fixo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/guidelines/img/padroes/inicial-descritiva.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -551,7 +734,10 @@
       <updated>1527693985029</updated>
       <workItem from="1535060189771" duration="2874000" />
       <workItem from="1535132959078" duration="3208000" />
-      <workItem from="1535137081584" duration="119000" />
+      <workItem from="1535137081584" duration="836000" />
+      <workItem from="1535976943505" duration="459000" />
+      <workItem from="1535977552466" duration="1797000" />
+      <workItem from="1538487726127" duration="6063000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1527694064823</created>
@@ -588,14 +774,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535136755924</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-- adicionando o botão salvar + novo e salvar + continuar.">
+      <created>1535137205760</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535137205760</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6201000" />
+    <option name="totallyTimeSpent" value="15237000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1019" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1017" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -606,12 +799,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925472" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25985092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26783812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -681,7 +874,10 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="Adicionando padrão para botão Salvar + Novo e Salvar + Continuar" />
     <MESSAGE value="-- adicionando o botão salvar + novo e salvar + continuar." />
-    <option name="LAST_COMMIT_MESSAGE" value="-- adicionando o botão salvar + novo e salvar + continuar." />
+    <MESSAGE value="-- documentando alinhamento de marcas e atualização documentação de padrões em diversas resoluções." />
+    <MESSAGE value="#27828 documentando alinhamento de marcas e atualização documentação de padrões em diversas resoluções." />
+    <MESSAGE value="#28402 documentando alinhamento de marcas e atualização documentação de padrões em diversas resoluções." />
+    <option name="LAST_COMMIT_MESSAGE" value="#28402 documentando alinhamento de marcas e atualização documentação de padrões em diversas resoluções." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,7 +888,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -700,7 +899,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guidelines/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -734,9 +939,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guidelines/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="800" column="45" lean-forward="false" selection-start-line="800" selection-start-column="45" selection-end-line="800" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="354" column="0" lean-forward="true" selection-start-line="354" selection-start-column="0" selection-end-line="354" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
